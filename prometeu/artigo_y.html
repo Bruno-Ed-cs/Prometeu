@@ -5,59 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <!--Links das bibliotecas do bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <title>Prometeu</title>
-    <link rel="stylesheet" href="estilo_geral.css">
+    <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
+    <script src="insteractions.js"></script>
+    <link rel="stylesheet" href="main_style.css">
     <link rel="icon" href="imagens/iconepag-red.png">
 </head>
 
 <body>
 
-    <!--Menu do topo-->
-    <header>
-        <div id="top-header">
-        <nav>
-            <div id="menu">
-            <ul>
-                <li><a class="botao" data-bs-toggle="collapse" href="#hide" role="button">. . .</a></li>
-                <li><a href="inicio.html">Início</a></li>
-                <li class="selected"><a href="artigos.html">Artigos</a></li>
-                <li><a href="timeline.html">Linha do tempo</a></li>
-                <li><a href="referencias.html">Referências</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <img id="logo" src="imagens/logopainel.png" alt="logo">
+    <nav>
+        
+        <li >
+            <a onclick="call_aside()" class="button_menu icon"> <i class="fa-solid fa-bars fa-xl"></i> <p>Menu</p> </a>
             
-            </ul>
-
+        </li>
+        <li><a class="icon" href="inicio.html"><span><i class="fa-solid fa-house fa-sm"></i></span><p>Início</p></a></li>
+        <li class="selected"><a class="icon" href="artigos.html"><i class="fa-solid fa-newspaper fa-sm"></i><p>Artigos</p></a></li>
+        <li><a class="icon" href="timeline.html"><i class="fa-solid fa-timeline fa-sm"></i></i><p>Linha do tempo</p></a></li>
+        <li><a class="icon" onclick="call_config()"><i class="fa-solid fa-gear fa-sm"></i><p>Configurações</p></a></li>
+        <li>
+            <a onclick="call_bar()" class="icon"><i class="fa-solid fa-magnifying-glass fa-sm"></i><p>Busca</p></a>
+            <div class="search_bar" id="bar">
+                <input type="text">
+                <button><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
             </div>
-        </nav>
+        </li>
+        <img id="logo" src="imagens/logopainel.png" alt="logo">
+        
+    </nav>
+
+    <div class="config" id="config_menu">
+        <a class="close_menu icon" onclick="call_config()"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+        <h4>Aparência</h4>
+        <div class="themes">
+            <h5>Temas:</h5>
+            <div class="field">
+                <input type="radio" name="themes" id="dark">
+                <label for="dark">Tema escuro</label>
+            </div>
+            <div class="field">
+                <input type="radio" name="themes" id="light" checked="checked">
+                <label for="light">Tema claro</label>
+            </div>
+            <div class="field">
+                <input type="radio" name="themes" id="high_contrast">
+                <label for="high_contrast">Alto contraste</label>
+            </div>
         </div>
-    </header>
+        <!-- 
+        <div class="font_config">
+            <input type="radio" name="sizes" id="20px">
+            <label for="dark">Tema Escuro</label>
+            <input type="radio" name="sizes" id="light">
+            <label for="light">Tema claro</label>
+            <input type="radio" name="sizes" id="high_contrast">
+            <label for="dark">Alto contraste</label>
+        </div>
+        -->
+    </div>
 
     <!--Menu lateral dos artigos -->
-    <aside class="collapse" id="hide">
-        <div class="nav">
-
-            
-            <h4>Colunas</h4>
-                <a href="artigo_x.html">Qualia</a>
-                <a href="artigo_y.html">Epifenomenalismo</a>
-                <a href="artigo_z.html">Dualismo</a>        
-	</div>
-
+    <aside id="side_menu">
+        <div class="top">
+            <h4>Artigos</h4>
+            <a class="icon close_menu" onclick="call_aside()"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+        </div>
+        <div class="artigos">
+            <a href="artigo_x.html">Qualia</a>
+            <a href="artigo_y.html">Epifenomenalismo</a>
+            <a href="artigo_z.html">Dualismo</a>
+        </div>
+        <div class="extras">
+            <a class="icon" href="referencias.html"><i class="fa-solid fa-circle-info fa-sm"></i><p>Referências</p></a>
+            <a class="icon" href="sobre.html"><i class="fa-solid fa-address-card fa-sm"></i><p>Sobre</p></a>   
+        </div>     
     </aside>
 
     <!--Div dos artigos-->
     <article class="container">
         <h2>Roubou as cores do universo? Melhor ligar pro Saul. (qualia epifenomenal vs fisicalismo) </h2>
-	<img class="card-img-top" src="I1/Saul_Goodman.jpeg" alt="foto de Saul Goodman">
+	<img class="media" src="I1/Saul_Goodman.jpeg" alt="foto de Saul Goodman">
         <p>
 Catástrofe total! Imagine que, de repente, o mundo inteiro se torne preto e branco, talvez porque atingimos um novo estágio do roteiro do universo, como em Better Call Saul. As pessoas que vivem agora, embora definitivamente fossem sentir uma falta enorme de apreciar as cores das flores ou os tons do pôr do sol, ao menos ainda poderiam ter uma vaga memória de um mundo colorido. Pior ainda seria ser Mary, uma pobre garota que nasceu precisamente no momento em que todas as cores sumiram!    </p>
         </p>
 
-	<video width="560" height="315" controls>
+	<video class="media" width="560" height="315" controls>
         <source src="Video/Preto_Branco.mp4" type="video/mp4">
         <source src="Video/Branco_Preto.ogg" type="video/ogg">
         </video>
@@ -86,9 +118,8 @@ Catástrofe total! Imagine que, de repente, o mundo inteiro se torne preto e bra
             O filósofo Daniel Dennett, no entanto, não é convencido tão facilmente pela descoberta de Mary. Ele propõe que ao ler o argumento nós somos levados a subestimar o que significa afirmar que ela conhece todos os fatos físicos sobre as cores, até porque na prática é inimaginável alguém possuir todo o conhecimento possível sobre qualquer coisa.
         </p>
 
-	<div class="row">
 	<div class="card" style="width: 250px;">
-            <img class="card-img-top" src="I1/Daniel_Dennett.jpeg" alt="foto de Daniel Dennett">
+            <img class="card-image" src="I1/Daniel_Dennett.jpeg" alt="foto de Daniel Dennett">
             <div class="card-body">
                 </div>
             <div class="card-footer"><a href=timeline.html>Daniel Dennett</a></div>
@@ -97,12 +128,11 @@ Catástrofe total! Imagine que, de repente, o mundo inteiro se torne preto e bra
 
 	
 	<div class="card" style="width: 250px;">
-            <img class="card-img-top" src="I1/Frank_Jackson.jpeg" alt="foto de Frank Jackson">
+            <img class="card-image" src="I1/Frank_Jackson.jpeg" alt="foto de Frank Jackson">
             <div class="card-body">
                 </div>
             <div class="card-footer"><a href=timeline.html>Frank Jackson</a></div>
-        </div>
-        <br>
+    </div>
 
 
         <p>

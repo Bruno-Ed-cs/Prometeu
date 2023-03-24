@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
+    <script src="insteractions.js"></script>
     <title>Prometeu</title>
     <link rel="stylesheet" href="main_style.css">
     <link rel="icon" href="imagens/iconepag-red.png">
@@ -16,31 +17,78 @@
     <!--Menu do topo-->
     <nav>
         
-        <li class="menu_art">
-            <a class="button_menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+        <li >
+            <a onclick="call_aside()" class="button_menu icon"> <i class="fa-solid fa-bars fa-xl"></i> <p>Menu</p> </a>
             
         </li>
-        <li><a href="inicio.html"><i class="fa-solid fa-house fa-lg"></i><p>Início</p></a></li>
-        <li class="selected"><a href="artigos.html"><i class="fa-solid fa-newspaper fa-lg"></i><p>Artigos</p></a></li>
-        <li><a href="timeline.html"><i class="fa-solid fa-timeline fa-lg"></i></i><p>Linha do tempo</p></a></li>
-        <li><a href="referencias.html"><i class="fa-solid fa-circle-info fa-lg"></i><p>Referências</p></a></li>
-        <li><a href="sobre.html"><i class="fa-solid fa-address-card fa-lg"></i><p>Sobre</p></a></li>
+        <li><a class="icon" href="inicio.html"><span><i class="fa-solid fa-house fa-sm"></i></span><p>Início</p></a></li>
+        <li class="selected"><a class="icon" href="artigos.html"><i class="fa-solid fa-newspaper fa-sm"></i><p>Artigos</p></a></li>
+        <li><a class="icon" href="timeline.html"><i class="fa-solid fa-timeline fa-sm"></i></i><p>Linha do tempo</p></a></li>
+        <li><a class="icon" onclick="call_config()"><i class="fa-solid fa-gear fa-sm"></i><p>Configurações</p></a></li>
+        <li>
+            <a onclick="call_bar()" class="icon"><i class="fa-solid fa-magnifying-glass fa-sm"></i><p>Busca</p></a>
+            <div class="search_bar" id="bar">
+                <input type="text">
+                <button><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+            </div>
+        </li>
         <img id="logo" src="imagens/logopainel.png" alt="logo">
         
     </nav>
 
+    <div class="config" id="config_menu">
+        <a class="close_menu icon" onclick="call_config()"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+        <h4>Aparência</h4>
+        <div class="themes">
+            <h5>Temas:</h5>
+            <div class="field">
+                <input type="radio" name="themes" id="dark">
+                <label for="dark">Tema escuro</label>
+            </div>
+            <div class="field">
+                <input type="radio" name="themes" id="light" checked="checked">
+                <label for="light">Tema claro</label>
+            </div>
+            <div class="field">
+                <input type="radio" name="themes" id="high_contrast">
+                <label for="high_contrast">Alto contraste</label>
+            </div>
+        </div>
+        <!-- 
+        <div class="font_config">
+            <input type="radio" name="sizes" id="20px">
+            <label for="dark">Tema Escuro</label>
+            <input type="radio" name="sizes" id="light">
+            <label for="light">Tema claro</label>
+            <input type="radio" name="sizes" id="high_contrast">
+            <label for="dark">Alto contraste</label>
+        </div>
+        -->
+    </div>
+
     <!--Menu lateral dos artigos -->
-    <aside>
-        <h4>Artigos</h4>
-        <a href="artigo_x.html">Qualia</a>
-        <a href="artigo_y.html">Epifenomenalismo</a>
-        <a href="artigo_z.html">Dualismo</a>        
+    <aside id="side_menu">
+        <div class="top">
+            <h4>Artigos</h4>
+            <a class="icon close_menu" onclick="call_aside()"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+        </div>
+        <div class="artigos">
+            <a href="artigo_x.html">Qualia</a>
+            <a href="artigo_y.html">Epifenomenalismo</a>
+            <a href="artigo_z.html">Dualismo</a>
+        </div>
+        <div class="extras">
+            <a class="icon" href="referencias.html"><i class="fa-solid fa-circle-info fa-sm"></i><p>Referências</p></a>
+            <a class="icon" href="sobre.html"><i class="fa-solid fa-address-card fa-sm"></i><p>Sobre</p></a>   
+        </div>     
     </aside>
+
+    
 
     <!--Div dos artigos-->
     <article class="container">
         <h2>Kate Bush subindo a colina da qualia (um acordo com... um morcego?)</h2>
-	<img class="foto" src="I1/Kate_Bush.jpeg" alt="foto de Kate Bush fantasiada de morcego">
+	<img class="media" src="I1/Kate_Bush.jpeg" alt="foto de Kate Bush fantasiada de morcego">
         <p>
 Uma das melhores experiências compartilhadas provocadas por Stranger Things foi fazer com que milhões de pessoas levitassem (ao menos por dentro!) junto com a Max ouvindo Running Up That Hill da Kate Bush. 
 E isso não poderia ser mais conveniente, considerando que essa música é precisamente sobre compartilhar experiências subjetivas.
@@ -51,7 +99,7 @@ Se você já ouviu ela por todos os lugares mas ainda não tiver parado para foc
 	Imagine que após a Kate Bush chegar ao topo da colina, Deus de fato se compadecesse da sua angústia e a trocasse de lugar com seu amante, para que ele possa saber como ela se sente, e vice-versa.
         </p>
 
-        <video controls>
+        <video controls class="media">
         <source src="Video/Kate_Bush.mp4" type="video/mp4">
         <source src="Video/Kate_Bush.ogg" type="video/ogg">
         </video>
@@ -76,9 +124,7 @@ Se você já ouviu ela por todos os lugares mas ainda não tiver parado para foc
             Nós não fomos os únicos a chegar a essa conclusão com o experimento da Kate Bush, claro. No seu famoso artigo “What Is It Like to Be a Bat?” (Como é ser um morcego?) o filósofo Thomas Nagel propõe que o limite para o que pode ser analisado de forma objetiva não está nos confins do universo não observável, como talvez esperado, mas precisamente no caráter subjetivo da experiência, algo que de cara aparenta ser tão familiar e próximo de nós.
         </p>
 		<div class="card" style="width: 250px;">
-            <img class="card-img-top" src="I1/Thomas_Nagel.jpeg" alt="foto de Thomas Nagel">
-            <div class="card-body">
-                </div>
+            <img class="card-image" src="I1/Thomas_Nagel.jpeg" alt="foto de Thomas Nagel">
             <div class="card-footer"><a href=timeline.html>Thomas Nagel</a></div>
         </div>
         <br>
