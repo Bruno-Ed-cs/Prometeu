@@ -340,11 +340,13 @@ aside{
 #wellcome{
     display: grid;
     margin: 0.5rem 0.5rem 3rem 0.5rem;
-    grid-template-areas: "imagem"
+    grid-template-areas:
                    "intro"
                    "sumario"
                    "links";
     gap: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .intro_bg{
@@ -354,16 +356,14 @@ aside{
 #wellcome img{
     height: 100%;
     max-width: 100%;
-    border-radius: 0 1rem 1rem 0;
 }
 
-.site_logo{
-    grid-area: imagem;
-}
 
 .intro{
     grid-area: intro;
     color: var(--Primary_font_color);
+    display: flex;
+    flex-flow: column;
 }
 
 #sumary{
@@ -421,6 +421,17 @@ aside{
     margin: 0.5rem;
     box-shadow: var(--Box_shadow_full);
     border-radius: 1rem;
+    background-color: var(--Primary_color);
+}
+
+.links:hover{
+    background-color: var(--Hover_color);
+}
+
+.links img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0 1rem 1rem 0;
 }
 
 .title{
@@ -451,6 +462,8 @@ aside{
 
 .thumbnail{
     grid-area: img;
+    max-width: 10rem;
+    max-height: 10rem;
 }
 
 /** Tablets **/
@@ -477,15 +490,40 @@ aside{
         display: inline-block;
     }
 
+    .links{
+        grid-template-columns: auto auto auto auto 2.5rem 2.5rem ;
+    }
+
     .intro_links{
         display: grid;
+        margin-left: 5%;
+        margin-right: 5%;
+
     }
 
     #wellcome{
-        grid-template-areas: "intro intro intro imagem imagem"
-                       "intro intro intro imagem imagem"
-                       "sumario sumario sumario sumario sumario"
-                       "links links links links links";
+        grid-template-areas: "intro intro intro"
+                       "intro intro intro "
+                       "sumario sumario sumario"
+                       "links links links";
+
+        margin: 3rem 0.5rem 0.5rem 0.5rem
+    }
+
+    .intro{    
+        font-size: 1.7rem;
+        flex-flow: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .intro img{
+        max-width: 4rem;
+    }
+
+    #sumary{
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
 }
@@ -543,6 +581,11 @@ aside{
         top: 3rem;
 
     }
+    .intro_links{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
 }
 
 /** Monitores 4K **/
@@ -551,5 +594,15 @@ aside{
     :root{
         font-size: 30px;
     }
+
+    .intro_links{
+        height: 15rem;
+        width: 50rem;
+
+    }
+
+     
+    
+
 
 }
