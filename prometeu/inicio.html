@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html leng="pt-br" class="intro_bg">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+      <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
+      <script src="insteractions.js"></script>
+      <title>Prometeu</title>
+      <link rel="stylesheet" href="main_style.css">
+      <link rel="icon" href="imagens/iconepag-red.png">
+   </head>
+   <body>
+		
+      <!--Menu do topo-->
+      <nav>
+         <li >
+            <a onclick="call_aside()" class="button_menu icon">
+               <i class="fa-solid fa-bars fa-xl"></i> 
+               <p>Menu</p>
+            </a>
+         </li>
+         <li class="selected">
+            <a class="icon" href="inicio.html">
+               <span><i class="fa-solid fa-house fa-sm"></i></span>
+               <p>Início</p>
+            </a>
+         </li>
+         <li>
+            <a class="icon" href="artigos.html">
+               <i class="fa-solid fa-newspaper fa-sm"></i>
+               <p>Artigos</p>
+            </a>
+         </li>
+         <li>
+            <a class="icon" href="timeline.html">
+               <i class="fa-solid fa-timeline fa-sm"></i></i>
+               <p>Linha do tempo</p>
+            </a>
+         </li>
+         <li>
+            <a class="icon" onclick="call_config()">
+               <i class="fa-solid fa-gear fa-sm"></i>
+               <p>Configurações</p>
+            </a>
+         </li>
+         <li>
+            <a onclick="call_bar()" class="icon">
+               <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+               <p>Busca</p>
+            </a>
+            <div class="search_bar" id="bar">
+               <input type="text">
+               <button><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+            </div>
+         </li>
+         <img id="logo" src="imagens/logopainel.png" alt="logo">
+      </nav>
+      <!-- Menu de Configurações -->
+      <div class="config" id="config_menu">
+         <a class="close_menu icon" onclick="call_config()"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+         <h4>Aparência</h4>
+         <div class="themes">
+            <h5>Temas:</h5>
+            <div class="field">
+               <input type="radio" name="themes" id="dark">
+               <label for="dark">Tema escuro</label>
+            </div>
+            <div class="field">
+               <input type="radio" name="themes" id="light" checked="checked">
+               <label for="light">Tema claro</label>
+            </div>
+            <div class="field">
+               <input type="radio" name="themes" id="high_contrast">
+               <label for="high_contrast">Alto contraste</label>
+            </div>
+         </div>
+         <!-- 
+            <div class="font_config">
+             <input type="radio" name="sizes" id="20px">
+             <label for="dark">Tema Escuro</label>
+             <input type="radio" name="sizes" id="light">
+             <label for="light">Tema claro</label>
+             <input type="radio" name="sizes" id="high_contrast">
+             <label for="dark">Alto contraste</label>
+            </div>
+            -->
+      </div>
+      <!--Menu lateral dos artigos -->
+      <aside id="side_menu">
+         <div class="top">
+            <h4>Artigos</h4>
+            <a class="icon close_menu" onclick="call_aside()"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+         </div>
+         <div class="artigos">
+            <a href="artigo_qualia.html">Qualia</a>
+            <a href="artigo_epifenomenalismo.html">Epifenomenalismo</a>
+            <a href="artigo_dualismo.html">Dualismo</a>
+         </div>
+         <div class="extras">
+            <a class="icon" href="referencias.html">
+               <i class="fa-solid fa-circle-info fa-sm"></i>
+               <p>Referências</p>
+            </a>
+            <a class="icon" href="sobre.html">
+               <i class="fa-solid fa-address-card fa-sm"></i>
+               <p>Sobre</p>
+            </a>
+         </div>
+      </aside>
+      <main id="wellcome">
+         <div class="intro">
+            <img src="imagens/logo1.png" alt="Cérebro">
+         <div class="head">
+            <h1>Prometeu:</h1>
+            <p>Um Guia para a filosofia da mente</p>
+         </div>
+         </div>
+         <div id="sumary">
+            <p>
+               Os gregos antigos tinham uma lenda muito interessante para o surgimento da civilização humana. Prometeu, um titã da mitologia grega, roubou o fogo dos deuses e o deu de presente à humanidade na forma de tecnologia e conhecimento, possibilitando seu desenvolvimento.  
+               Estando eles certos ou não em seu mito de origem, uma coisa é certa: algo definitivamente deve nos diferenciar de um ser inanimado. Um fogo incompreensível parece brilhar nos olhos de cada pessoa, a dotando de certa profundidade, a diferenciando de um mero zumbi. Chamamos esse fogo de consciência. Quando se é consciente, existe alguma coisa que é ser você, ou seja, ter o seu ponto de vista do universo. 
+               Mas como a consciência pode ter surgido? Podem todos esses sentimentos, pensamentos e sensações que nos compõe não serem nada além da atividade de neurônios no nosso cérebro, ou um passo a mais é necessário, como uma alma? Será que nós somos realmente somos tão especiais assim, ou mais coisas, como máquinas, podem ter esse “fogo” em si? 
+               Responder a essas e várias outras perguntas tem sido uma fascinação e dificuldade para filósofos há muito tempo. Apesar dos enormes avanços na nossa compreensão sobre a mente, um universo inteiro ainda resta para ser explorado dentro de nós. O objetivo deste site é te guiar em sua jornada ao longo dele.
+            </p>
+         </div>
+         <div class="intro_links" >
+            <h2>Introdução:</h2>
+            <a class="links" id="link1" href="">
+               <div class="title"><p>Introdução parte 1</p></div>
+               <div class="resume"><p>Introdução para todo o estilo e premissa do site</p></div>
+               <div class="thumbnail"><img src="I1/Kate_Bush.jpeg" alt="placeholder"></div>
+            </a>
+            <a class="links" id="link2" href="">
+               <div class="title"><p>Introdução parte 2</p></div>
+               <div class="resume"><p>Introdução para todo o estilo e premissa do site</p></div>
+               <div class="thumbnail"><img src="imagens/logo.png" alt="placeholder"></div>
+            </a>
+            <a class="big_link" href="artigos.html"><i class="fa-solid fa-newspaper fa-lg"></i><p>Artigos</p></a>
+         </div>
+
+            
+
+      </main>
+   </body>
+</html>
