@@ -1,68 +1,150 @@
 <!DOCTYPE html>
 <html leng="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <!--Links das bibliotecas do bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <title>Prometeu</title>
-    <link rel="stylesheet" href="estilo_geral.css">
-    <link rel="icon" href="imagens/iconepag-red.png">
-</head>
-
-<body>
-    <header>
-        <div id="top-header">
-        <nav>
-            <div id="menu">
-            <ul>
-                <li><a href="inicio.html">Início</a></li>
-                <li class="selected"><a href="artigos.html">Artigos</a></li>
-                <li><a href="timeline.html">Linha do tempo</a></li>
-                <li><a href="referencias.html">Referências</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <img id="logo" src="imagens/logopainel.png" alt="logo">
-            
-            </ul>
-
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+      <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
+      <script src="insteractions.js"></script>
+      <title>Prometeu</title>
+      <link rel="stylesheet" href="main_style.css">
+      <link rel="icon" href="imagens/iconepag-red.png">
+   </head>
+   <body>
+      <!--Menu do topo-->
+      <nav>
+         <li >
+            <a onclick="call_aside()" class="button_menu icon">
+               <i class="fa-solid fa-bars fa-xl"></i> 
+               <p>Menu</p>
+            </a>
+         </li>
+         <li>
+            <a class="icon" href="inicio.html">
+               <span><i class="fa-solid fa-house fa-sm"></i></span>
+               <p>Início</p>
+            </a>
+         </li>
+         <li class="selected">
+            <a class="icon" href="artigos.html">
+               <i class="fa-solid fa-newspaper fa-sm"></i>
+               <p>Artigos</p>
+            </a>
+         </li>
+         <li>
+            <a class="icon" href="timeline.html">
+               <i class="fa-solid fa-timeline fa-sm"></i></i>
+               <p>Linha do tempo</p>
+            </a>
+         </li>
+         <li>
+            <a class="icon" onclick="call_config()">
+               <i class="fa-solid fa-gear fa-sm"></i>
+               <p>Configurações</p>
+            </a>
+         </li>
+         <li>
+            <a onclick="call_bar()" class="icon">
+               <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+               <p>Busca</p>
+            </a>
+            <div class="search_bar" id="bar">
+               <input type="text">
+               <button><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
             </div>
-        </nav>
-        </div>
-    </header>
-    <div class="container">
-
-        <h2>Fenomenologia</h2>
-        <div class="card">
-            <div class="card-header"><a href='artigo_qualia.html'>Kate Bush subindo a colina da qualia (um acordo com... um morcego?)</a></div>
-            <div class="card-body"> <img style = "border: 5px solid #EE8B31;" align="right" src = I1/Kate_Bush.jpeg width = 35% >
-                <p>
-                    Séries populares como Stranger Things têm uma propriedade talvez tão interessante quanto suas histórias em si: elas nos permitem, de certa forma, compartilhar experiências. Milhões de pessoas ao redor do mundo, por mais diferentes que sejam, são unidas por um instante ao experimentarem aquela cena emocionante, aquele momento decisivo, aquele final arrebatador. Ou ao menos é o que parece. Mesmo que todos vissem simultaneamente a mesma cena, e nas exatas mesmas condições, elas realmente teriam a mesma experiência? Quando, no outro dia, você discute com seus amigos sobre um episódio, vocês estão realmente falando sobre a mesma coisa? Ou cada um, de certa forma, assistiu a uma série um pouco diferente? A filosofia tem uma coisa ou duas a dizer sobre isso. <a href=artigo_x.html>Ler mais...</a>
-                </p>
+         </li>
+         <img id="logo" src="imagens/logopainel.png" alt="logo">
+      </nav>
+      <!-- Menu de Configurações -->
+      <div class="config" id="config_menu">
+         <a class="close_menu icon" onclick="call_config()"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+         <h4>Aparência</h4>
+         <div class="themes">
+            <h5>Temas:</h5>
+            <div class="field">
+               <input type="radio" name="themes" id="dark">
+               <label for="dark">Tema escuro</label>
             </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header"><a href='artigo_epifenomenalismo.html'>Roubou as cores do universo? Melhor ligar pro Saul. (qualia epifenomenal vs fisicalismo)</a></div>
-            <div class="card-body">	<img style = "border: 5px solid #EE8B31;" align="right" src = I1/Saul_Goodman.jpeg width = 35% >
-                <p>
-                    É difícil imaginar como todas as coisas fascinantes que vagam pela nossa percepção poderiam não ser nada além da atividade complexa de neurônios atirando impulsos elétricos no nosso cérebro. Esse caráter quase mágico do nosso “mundo interior” convenceu diversos filósofos de que ele não deve estar no mundo físico em absoluto! Outros, por outro lado, não são encantados facilmente pela magia da Qualia. Para resolver essa disputa, só vai sobrar para a pobre Mary, cobaia dos experimentos caprichosos de filósofos.  <a href=artigo_y.html>Ler mais...</a>
-                </p>
+            <div class="field">
+               <input type="radio" name="themes" id="light" checked="checked">
+               <label for="light">Tema claro</label>
             </div>
-	    </div>   
-
-        <h2>Problema mente-corpo</h2>
-		<div class="card">
-            <div class="card-header"><a href='artigo_dualismo.html'>Eu teria conseguido se não fossem esses filósofos enxeridos e esse Gilbert Ryle idiota!</a></div>
-            <div class="card-body">	<img style = "border: 5px solid #EE8B31" align="right" src = I1/Artigo_Z.jpeg width = 35% >
-                <p>
-                    Durante séculos um fantasma assombrou os corredores do pensamento filosófico. Por meio de equívocos linguísticos e lógicos, ele foi saltando de mente em mente, nos prendendo a crenças antigas e ultrapassadas sobre a natureza da consciência. Gilbert Ryle e outros filósofos enxeridos, no entanto, comprometem-se em desmascará-lo, mostrando que todos esses fenômenos aparentemente sobrenaturais que formam nossa vida interior não precisam ser fantoches controlados por uma cópia nossa de outro mundo, ou alma: as vezes é só um cara material mascarado de mental. <a href=artigo_z.html>Ler mais...</a> 
-                </p>
+            <div class="field">
+               <input type="radio" name="themes" id="high_contrast">
+               <label for="high_contrast">Alto contraste</label>
             </div>
-        </div>
+         </div>
+         <!-- 
+            <div class="font_config">
+             <input type="radio" name="sizes" id="20px">
+             <label for="dark">Tema Escuro</label>
+             <input type="radio" name="sizes" id="light">
+             <label for="light">Tema claro</label>
+             <input type="radio" name="sizes" id="high_contrast">
+             <label for="dark">Alto contraste</label>
+            </div>
+            -->
+      </div>
+      <!--Menu lateral dos artigos -->
+      <aside id="side_menu">
+         <div class="top">
+            <h4>Artigos</h4>
+            <a class="icon close_menu" onclick="call_aside()"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+         </div>
+         <div class="artigos">
+            <a href="artigo_qualia.html">Qualia</a>
+            <a href="artigo_epifenomenalismo.html">Epifenomenalismo</a>
+            <a href="artigo_dualismo.html">Dualismo</a>
+         </div>
+         <div class="extras">
+            <a class="icon" href="referencias.html">
+               <i class="fa-solid fa-circle-info fa-sm"></i>
+               <p>Referências</p>
+            </a>
+            <a class="icon" href="sobre.html">
+               <i class="fa-solid fa-address-card fa-sm"></i>
+               <p>Sobre</p>
+            </a>
+         </div>
+      </aside>
+      <div class="container">
+         <h2>Fenomenologia</h2>
+         <a href='artigo_qualia.html' class="showcase">
+            <div class="show-header">
+               <h4>Kate Bush subindo a colina da qualia (um acordo com... um morcego?)</h4>
+            </div>
+            <div class="show-body">
+               <div class="display"><img src = I1/Kate_Bush.jpeg></div>
+               <p>
+                  Séries populares como Stranger Things têm uma propriedade talvez tão interessante quanto suas histórias em si: elas nos permitem, de certa forma, compartilhar experiências. Milhões de pessoas ao redor do mundo, por mais diferentes que sejam, são unidas por um instante ao experimentarem aquela cena emocionante, aquele momento decisivo, aquele final arrebatador. Ou ao menos é o que parece. Mesmo que todos vissem simultaneamente a mesma cena, e nas exatas mesmas condições, elas realmente teriam a mesma experiência? Quando, no outro dia, você discute com seus amigos sobre um episódio, vocês estão realmente falando sobre a mesma coisa? Ou cada um, de certa forma, assistiu a uma série um pouco diferente? A filosofia tem uma coisa ou duas a dizer sobre isso. 
 
+            </p>
+            </div>
+         </a>
+         <a href='artigo_epifenomenalismo.html' class="showcase">
+            <div class="show-header">
+               <h4>Roubou as cores do universo? Melhor ligar pro Saul. (qualia epifenomenal vs fisicalismo)</h4>
+            </div>
+            <div class="show-body">
+               <div class="display"><img src = I1/Saul_Goodman.jpeg></div>
+               <p>
+                  É difícil imaginar como todas as coisas fascinantes que vagam pela nossa percepção poderiam não ser nada além da atividade complexa de neurônios atirando impulsos elétricos no nosso cérebro. Esse caráter quase mágico do nosso “mundo interior” convenceu diversos filósofos de que ele não deve estar no mundo físico em absoluto! Outros, por outro lado, não são encantados facilmente pela magia da Qualia. Para resolver essa disputa, só vai sobrar para a pobre Mary, cobaia dos experimentos caprichosos de filósofos.  
+         </p>
+         </div>
+         </a>   
+         <h2>Problema mente-corpo</h2>
+         <a href='artigo_dualismo.html' class="showcase">
+            <div class="show-header">
+               <h4>Eu teria conseguido se não fossem esses filósofos enxeridos e esse Gilbert Ryle idiota!</h4>
+            </div>
+            <div class="show-body">
+               <div class="display"><img src = I1/Artigo_Z.jpeg></div>
+               <p>
+                  Durante séculos um fantasma assombrou os corredores do pensamento filosófico. Por meio de equívocos linguísticos e lógicos, ele foi saltando de mente em mente, nos prendendo a crenças antigas e ultrapassadas sobre a natureza da consciência. Gilbert Ryle e outros filósofos enxeridos, no entanto, comprometem-se em desmascará-lo, mostrando que todos esses fenômenos aparentemente sobrenaturais que formam nossa vida interior não precisam ser fantoches controlados por uma cópia nossa de outro mundo, ou alma: as vezes é só um cara material mascarado de mental. 
 
-</body>
+         </p>
+         </div>
+         </a>
+      </div>
+   </body>
 </html>
