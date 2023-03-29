@@ -23,6 +23,8 @@
 
 body{
     margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
 *{
@@ -131,6 +133,7 @@ article{
     align-items: center;
     margin: 1rem;
     color: var(--Secundary_font_color);
+    max-width: 50rem;
 }
 
 article p{
@@ -197,6 +200,7 @@ aside{
     height: 80%;
     position: fixed;
     bottom: 3rem;
+    left: 0;
     margin: 0.3rem;
     border-radius: 1rem;
     box-shadow: var(--Box_shadow);
@@ -303,8 +307,6 @@ aside{
 .config{
     position: fixed;
     bottom: 3rem;
-    left: 0;
-    right: 0;
     height: 80%;
     margin: 0.3rem;
     background-color: var(--Primary_color);
@@ -339,7 +341,7 @@ aside{
 
 #wellcome{
     display: grid;
-    margin: 0.5rem 0.5rem 3rem 0.5rem;
+    margin-bottom:3rem;
     grid-template-areas:
                    "intro"
                    "sumario"
@@ -347,6 +349,8 @@ aside{
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    max-width: 60rem;
+
 }
 
 .intro_bg{
@@ -376,6 +380,9 @@ aside{
     grid-template: "h2 h2"
                    "link1 link2"
                    "linku linku";
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .intro_links h2{
@@ -466,6 +473,90 @@ aside{
     max-height: 10rem;
 }
 
+/**Página dos artigos**/
+
+.container{
+    max-width: 50rem;
+    margin: 0.5rem 0.5rem 3rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.container h2{
+    color: var(--Secundary_font_color);
+    margin: 1rem;
+}
+
+/** Vitrine dos artigos **/
+
+
+
+.showcase{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    box-shadow: var(--Box_shadow_full);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+
+}
+
+.showcase p{
+    margin: 0.5rem;
+    color: var(--Secundary_font_color);
+
+}
+
+.display{
+    overflow: hidden;
+    max-height: 7rem;
+    max-width: 100%;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+
+.display img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 1rem;
+}
+
+.show-header{
+    background-color: var(--Primary_color);
+    color: var(--Primary_font_color);
+    border-radius: 1rem 1rem 0 0;    
+}
+
+.showcase:hover .show-header{
+    background-color: var(--Hover_color);
+}
+
+/** referencias **/
+
+.ref{
+    width: 100%;
+}
+
+.ref div{
+    padding: 0.5rem;
+}
+
+/** sobre **/
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: 1rem;
+}
+
+
 /** Tablets **/
 
 @media screen and (min-width: 600px){
@@ -496,9 +587,6 @@ aside{
 
     .intro_links{
         display: grid;
-        margin-left: 5%;
-        margin-right: 5%;
-
     }
 
     #wellcome{
@@ -515,6 +603,8 @@ aside{
         flex-flow: row-reverse;
         align-items: center;
         justify-content: space-evenly;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .intro img{
@@ -522,9 +612,16 @@ aside{
     }
 
     #sumary{
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
+
+    .display{
+        max-height: fit-content;
+        max-width: 20%;
+        float: right;
+    }
+    
 
 }
 
@@ -581,10 +678,14 @@ aside{
         top: 3rem;
 
     }
-    .intro_links{
-        margin-left: 20%;
-        margin-right: 20%;
+
+    .container{
+        margin: 3rem 0.5rem 0.5rem 0.5rem ;
     }
+
+    
+
+    
 
 }
 
@@ -595,11 +696,11 @@ aside{
         font-size: 30px;
     }
 
-    .intro_links{
-        height: 15rem;
-        width: 50rem;
-
+    .config{
+        height: fit-content;
     }
+
+    
 
      
     
