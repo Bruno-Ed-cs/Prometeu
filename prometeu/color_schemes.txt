@@ -1,0 +1,15 @@
+Tema claro:
+    --Primary_color: #EE8B31;
+    --Secundary_color: #EE3136;
+    --Hover_color: #f72d34a2;
+    --Background_color: #ffffff;
+    --Primary_font_color: #FFFFFF;
+    --Secundary_font_color: #000000;
+
+tema escuro:
+    --Primary_color: #730099;
+    --Secundary_color: #7ab10e;
+    --Hover_color: #a6db3bab;
+    --Background_color: #413f3f;
+    --Primary_font_color: #FFFFFF;
+    --Secundary_font_color: #ffffff;

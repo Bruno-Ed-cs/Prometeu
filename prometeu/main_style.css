@@ -2,12 +2,12 @@
     font-family: Roboto;
     font-size: 20px;
 
-    --Primary_color: #EE8B31;
-    --Secundary_color: #EE3136;
-    --Hover_color: #f72d34a2;
-    --Background_color: #ffffff;
+    --Primary_color: #730099;
+    --Secundary_color: #7ab10e;
+    --Hover_color: #a6db3bab;
+    --Background_color: #413f3f;
     --Primary_font_color: #FFFFFF;
-    --Secundary_font_color: #000000;
+    --Secundary_font_color: #ffffff;
     --Shadow_color: rgba(0, 0, 0, 0.2);
     --Box_shadow: 0px 5px 5px var(--Shadow_color);
     --Box_shadow_alt: 0 -10px 10px -10px var(--Shadow_color);
@@ -373,6 +373,7 @@ aside{
 #sumary{
     grid-area: sumario;
     text-indent: 1rem;
+    color: var(--Primary_font_color);
 }
 
 .intro_links{
