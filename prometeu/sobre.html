@@ -1,125 +1,132 @@
 <!DOCTYPE html>
 <html leng="pt-br">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-      <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
-      <script src="insteractions.js"></script>
-      <title>Prometeu</title>
-      <link rel="stylesheet" href="main_style.css">
-      <link rel="icon" href="imagens/iconepag-red.png">
-   </head>
-   <body>
-      <!--Menu do topo-->
-      <nav>
-         <li >
-            <a onclick="call_aside()" class="button_menu icon">
-               <i class="fa-solid fa-bars fa-xl"></i> 
-               <p>Menu</p>
-            </a>
-         </li>
-         <li>
-            <a class="icon" href="inicio.html">
-               <span><i class="fa-solid fa-house fa-sm"></i></span>
-               <p>Início</p>
-            </a>
-         </li>
-         <li>
-            <a class="icon" href="artigos.html">
-               <i class="fa-solid fa-newspaper fa-sm"></i>
-               <p>Artigos</p>
-            </a>
-         </li>
-         <li>
-            <a class="icon" href="timeline.html">
-               <i class="fa-solid fa-timeline fa-sm"></i></i>
-               <p>Linha do tempo</p>
-            </a>
-         </li>
-         <li>
-            <a class="icon" onclick="call_config()">
-               <i class="fa-solid fa-gear fa-sm"></i>
-               <p>Configurações</p>
-            </a>
-         </li>
-         <li>
-            <a onclick="call_bar()" class="icon">
-               <i class="fa-solid fa-magnifying-glass fa-sm"></i>
-               <p>Busca</p>
-            </a>
-            <div class="search_bar" id="bar">
-               <input type="text">
-               <button><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
-            </div>
-         </li>
-         <img id="logo" src="imagens/logopainel.png" alt="logo">
-      </nav>
-      <!-- Menu de Configurações -->
-      <div class="config" id="config_menu">
-         <a class="close_menu icon" onclick="call_config()"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
-         <h4>Aparência</h4>
-         <div class="themes">
-            <h5>Temas:</h5>
-            <div class="field">
-               <input type="radio" name="themes" id="dark">
-               <label for="dark">Tema escuro</label>
-            </div>
-            <div class="field">
-               <input type="radio" name="themes" id="light" checked="checked">
-               <label for="light">Tema claro</label>
-            </div>
-            <div class="field">
-               <input type="radio" name="themes" id="high_contrast">
-               <label for="high_contrast">Alto contraste</label>
-            </div>
-         </div>
-         <!-- 
-            <div class="font_config">
-             <input type="radio" name="sizes" id="20px">
-             <label for="dark">Tema Escuro</label>
-             <input type="radio" name="sizes" id="light">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
+    <script src="insteractions.js"></script>
+    <title>Prometeu</title>
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="icon" href="imagens/iconepag-red.png">
+ </head>
+ <body>
+    <!--Menu do topo-->
+    <nav>
+       <li >
+          <a onclick="call_aside()" class="button_menu icon">
+             <i class="fa-solid fa-bars fa-xl"></i> 
+             <p>Menu</p>
+          </a>
+       </li>
+       <li>
+          <a class="icon" href="inicio.html">
+             <span><i class="fa-solid fa-house fa-sm"></i></span>
+             <p>Início</p>
+          </a>
+       </li>
+       <li>
+          <a class="icon" href="artigos.html">
+             <i class="fa-solid fa-newspaper fa-sm"></i>
+             <p>Artigos</p>
+          </a>
+       </li>
+       <li>
+          <a class="icon" href="timeline.html">
+             <i class="fa-solid fa-timeline fa-sm"></i></i>
+             <p>Linha do tempo</p>
+          </a>
+       </li>
+       <li>
+          <a class="icon" onclick="call_config()">
+             <i class="fa-solid fa-gear fa-sm"></i>
+             <p>Configurações</p>
+          </a>
+       </li>
+       <li>
+          <a onclick="call_bar()" class="icon">
+             <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+             <p>Busca</p>
+          </a>
+          <div class="search_bar" id="bar">
+             <input type="text">
+             <button><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+          </div>
+       </li>
+       <img id="logo" src="imagens/logopainel.png" alt="logo">
+    </nav>
+    <!-- Menu de Configurações -->
+    <div class="config" id="config_menu">
+       <a class="close_menu icon" onclick="call_config()"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+       <h4>Aparência</h4>
+       <div class="themes">
+          <h5>Temas:</h5>
+          <div class="field">
+             <input type="radio" name="themes" id="dark">
+             <label for="dark">Tema escuro</label>
+          </div>
+          <div class="field">
+             <input type="radio" name="themes" id="light" checked="checked">
              <label for="light">Tema claro</label>
-             <input type="radio" name="sizes" id="high_contrast">
-             <label for="dark">Alto contraste</label>
-            </div>
-            -->
-      </div>
-      <!--Menu lateral dos artigos -->
-      <aside id="side_menu">
-         <div class="top">
-            <h4>Artigos</h4>
-            <a class="icon close_menu" onclick="call_aside()"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
-         </div>
-         <div class="artigos">
-            <a href="artigo_qualia.html">Qualia</a>
-            <a href="artigo_epifenomenalismo.html">Epifenomenalismo</a>
-            <a href="artigo_dualismo.html">Dualismo</a>
-         </div>
-         <div class="extras">
-            <a class="icon" href="referencias.html">
-               <i class="fa-solid fa-circle-info fa-sm"></i>
-               <p>Referências</p>
-            </a>
-            <a class="icon selected" href="sobre.html">
-               <i class="fa-solid fa-address-card fa-sm"></i>
-               <p>Sobre</p>
-            </a>
-         </div>
-      </aside>
-      <div class="container">
-         <div class="about">
-            <img src="imagens/logo_IFRN_br-4129418787.png" alt="ifrn" style="width:80%;">
-            <h4>Prometeu</h4>
-            <h5>
-               Projeto realizado pelos seguintes alunos do IFRN:
-            </h5>
-            <ul>
-               <li>Brayan Lucas Oliveira Dantas</li>
-               <li>Ruan Victor da Silva Nascimento</li>
-               <li>Bruno Eduardo Costa da Silva</li>
-            </ul>
-         </div>
-      </div>
-   </body>
+          </div>
+          <div class="field">
+             <input type="radio" name="themes" id="high_contrast">
+             <label for="high_contrast">Alto contraste</label>
+          </div>
+       </div>
+       <!-- 
+          <div class="font_config">
+           <input type="radio" name="sizes" id="20px">
+           <label for="dark">Tema Escuro</label>
+           <input type="radio" name="sizes" id="light">
+           <label for="light">Tema claro</label>
+           <input type="radio" name="sizes" id="high_contrast">
+           <label for="dark">Alto contraste</label>
+          </div>
+          -->
+    </div>
+    <!--Menu lateral dos artigos -->
+    <aside id="side_menu">
+       <div class="top">
+          <h4>Artigos</h4>
+          <a class="icon close_menu" onclick="call_aside()"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+       </div>
+       <div class="artigos">
+          <a href="artigo_qualia.html">Qualia</a>
+          <a href="artigo_epifenomenalismo.html">Epifenomenalismo</a>
+          <a href="artigo_dualismo.html">Dualismo</a>
+       </div>
+       <div class="extras">
+          <a class="icon" href="referencias.html">
+             <i class="fa-solid fa-circle-info fa-sm"></i>
+             <p>Referências</p>
+          </a>
+          <a class="icon selected" href="sobre.html">
+             <i class="fa-solid fa-address-card fa-sm"></i>
+             <p>Sobre</p>
+          </a>
+       </div>
+    </aside>
+
+    <div class="container">
+        <div class="about"><img src="imagens/logo_IFRN_br-4129418787.png" alt="ifrn" style="width:80%;">
+        <h4>Prometeu</h4>
+        <h5>
+            Projeto realizado pelos seguintes alunos do IFRN:
+        </h5>
+        <ul>
+            <li>Brayan Lucas Oliveira Dantas</li>
+            <li>Ruan Victor da Silva Nascimento</li>
+            <li>Bruno Eduardo Costa da Silva</li>
+        </ul>
+        </div>
+        
+
+    </div>
+
+    
+
+</body>
 </html>
