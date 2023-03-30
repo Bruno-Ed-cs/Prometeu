@@ -157,8 +157,14 @@ article h2{
     justify-content: center;
     box-shadow: var(--Box_shadow);
     border-radius: 1rem;
-    margin: 1rem;
+    max-width: 15rem;
+    height: 32rem;
+    overflow: hidden;
+}
 
+article .card{
+    height: fit-content;
+    margin: 0.5rem;
 }
 
 .card a{
@@ -172,10 +178,11 @@ article h2{
 }
 
 .card-image{
-    border-radius: 1rem 1rem 0 0;
     margin: 0;
     height: auto;
-    max-width: 100%;
+    max-width: 110%;
+    object-fit: cover;
+    object-position: 50% 50%;
 
 }
 
@@ -185,9 +192,37 @@ article h2{
     align-items: center;
     background-color: var(--Primary_color);
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     border-radius: 0 0 1rem 1rem;
+    color: var(--Primary_font_color);
+    text-indent: 0.5rem;
 }
+
+.card-body{
+    padding: 0.4rem;
+    color: var(--Secundary_font_color);
+    height: 10rem;
+}
+
+.card-text{
+    overflow-y: auto;
+    height: 7rem;
+}
+
+.card-title{
+    text-align: center;
+    margin: 0.2rem;
+}
+
+.card_container{
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: auto;
+    grid-template-rows: max-content;
+    gap: 1rem;
+}
+
 
 /** Menu lateral **/
 
@@ -621,7 +656,9 @@ aside{
         max-width: 20%;
         float: right;
     }
-    
+    .card_container{
+        grid-template-columns: auto auto;
+    }
 
 }
 
@@ -681,6 +718,10 @@ aside{
 
     .container{
         margin: 3rem 0.5rem 0.5rem 0.5rem ;
+    }
+
+    .card_container{
+        grid-template-columns: auto auto auto;
     }
 
     
