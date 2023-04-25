@@ -46,3 +46,14 @@ function call_config(){
     }
 
 }
+
+function call(target_id){
+    document.getElementById(target_id).style.display = "flex"
+    console.log(target_id)
+}
+
+function close_element(parent_id){
+    document.getElementById(parent_id).style.display = "none"
+    console.log(parent_id)
+}
+
