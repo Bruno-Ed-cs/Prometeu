@@ -29,25 +29,25 @@ document.addEventListener('click', function(event) {
 
 
 
-  
-  
-
 
 function call(target_id){
 
-    var target = document.getElementById(target_id);
+    let target = document.getElementById(target_id);
     
-    if (target.style.display == "none"){
-        target.style.display = "flex"
+    if (target.style.display == "flex"){
+        target.style.display = "none";
         
     }else{
-        target.style.display = "none"
+        target.style.display = "flex";
     };
     
     for (let n = 0; n < ui_menus.length; n++){
-        if (target_id != ui_menus[n].id)
+        if (target.id =! ui_menus[n].id){
             ui_menus[n].style.display = 'none';
+        };
+        console.log(target_id =! ui_menus[n].id)
     };
+
     console.log(target_id)
 };
 
