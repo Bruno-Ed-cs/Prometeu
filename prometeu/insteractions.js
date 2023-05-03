@@ -1,13 +1,40 @@
 var ui_menus = document.querySelectorAll('.menu');
 
+// chat gpt
 
-function none_menu(exeptions)
-for (let n = 0; n < ui_menus.length; n++){
-    ui_menus[n].style.display = 'none';
-};
+document.addEventListener('click', function(event) {
+    if (event.target.hasAttribute('onclick')) {
+      // If the clicked element already has an onclick event, do nothing
+      event.stopPropagation();
+    } else if (!event.target.classList.contains('menu')) {
+      // Get all elements with the 'menu' class
+      var menuElements = document.querySelectorAll('.menu');
+      
+      // Loop through each menu element and set its display to 'none'
+      for (var i = 0; i < menuElements.length; i++) {
+        menuElements[i].style.display = 'none';
+      }
+    }
+  });
+  
+  
+
 
 function call(target_id){
-    document.getElementById(target_id).style.display = "flex"
+
+    var target = document.getElementById(target_id);
+    
+    if (target.style.display == "none"){
+        target.style.display = "flex"
+        
+    }else{
+        target.style.display = "none"
+    };
+    
+    for (let n = 0; n < ui_menus.length; n++){
+        if (target_id != ui_menus[n].id)
+            ui_menus[n].style.display = 'none';
+    };
     console.log(target_id)
 };
 
@@ -16,3 +43,5 @@ function close_element(parent_id){
     console.log(parent_id)
 };
 
+
+  
