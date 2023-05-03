@@ -1,21 +1,34 @@
 var ui_menus = document.querySelectorAll('.menu');
 
 // chat gpt
+var elementsWithListener = [];
 
 document.addEventListener('click', function(event) {
-    if (event.target.hasAttribute('onclick')) {
-      // If the clicked element already has an onclick event, do nothing
-      event.stopPropagation();
-    } else if (!event.target.classList.contains('menu')) {
-      // Get all elements with the 'menu' class
-      var menuElements = document.querySelectorAll('.menu');
-      
-      // Loop through each menu element and set its display to 'none'
-      for (var i = 0; i < menuElements.length; i++) {
-        menuElements[i].style.display = 'none';
-      }
+  if (event.target.hasAttribute('onclick') || event.target.closest('[onclick]')) {
+    // If the clicked element or one of its ancestors has an onclick event, do nothing
+    event.stopPropagation();
+  } else if (!event.target.classList.contains('menu')) {
+    // Get all elements with the 'menu' class
+    var menuElements = document.querySelectorAll('.menu');
+
+    // Loop through each menu element and set its display to 'none'
+    for (var i = 0; i < menuElements.length; i++) {
+      menuElements[i].style.display = 'none';
     }
-  });
+
+    // Add the clicked element to the list of elements with the event listener
+    if (!elementsWithListener.includes(event.target)) {
+      elementsWithListener.push(event.target);
+    }
+
+    // Print the list of elements with the event listener on the console
+    console.log('Elements with event listener:', elementsWithListener);
+  }
+});
+
+
+
+
   
   
 
