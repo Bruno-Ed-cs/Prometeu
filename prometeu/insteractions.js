@@ -1,4 +1,4 @@
-var ui_menus = document.querySelectorAll('.menu');
+var ui_menus = document.getElementsByClassName('menu');
 
 // chat gpt
 var elementsWithListener = [];
@@ -32,23 +32,22 @@ document.addEventListener('click', function(event) {
 
 function call(target_id){
 
-    let target = document.getElementById(target_id);
-    
-    if (target.style.display == "flex"){
-        target.style.display = "none";
+    if (document.getElementById(target_id).style.display == "flex"){
+        document.getElementById(target_id).style.display = "none";
+        console.log('c')
         
-    }else{
-        target.style.display = "flex";
+    } else{
+        document.getElementById(target_id).style.display = "flex";
+        console.log('b')
     };
     
-    for (let n = 0; n < ui_menus.length; n++){
-        if (target.id =! ui_menus[n].id){
+    for (var n = 0; n < ui_menus.length; n++){
+        if (ui_menus[n].id !== target_id){
+            console.log(ui_menus[n].id);
             ui_menus[n].style.display = 'none';
         };
-        console.log(target_id =! ui_menus[n].id)
+        console.log(ui_menus[n])
     };
-
-    console.log(target_id)
 };
 
 function close_element(parent_id){
