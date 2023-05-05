@@ -3,6 +3,7 @@ var ui_menus = document.getElementsByClassName('menu');
 // chat gpt
 var elementsWithListener = [];
 
+/*
 document.addEventListener('click', function(event) {
   if (event.target.hasAttribute('onclick') || event.target.closest('[onclick]')) {
     // If the clicked element or one of its ancestors has an onclick event, do nothing
@@ -24,6 +25,23 @@ document.addEventListener('click', function(event) {
     // Print the list of elements with the event listener on the console
     console.log('Elements with event listener:', elementsWithListener);
   }
+});
+
+*/
+
+document.addEventListener('click', function (event){
+
+  if (event.target.classList.contains('menu') || event.target.closest('.menu') || event.target.hasAttribute('onclick') || event.target.closest('[onclick]')) {
+    
+    event.stopPropagation();
+
+  } else{
+
+    for (i = 0; i < ui_menus.length; i++){
+      ui_menus[i].style.display = 'none'
+    }
+
+  };
 });
 
 
