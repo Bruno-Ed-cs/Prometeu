@@ -1,33 +1,53 @@
 var ui_menus = document.getElementsByClassName('menu');
+var root_style = document.querySelector(':root');
+var root_properties = getComputedStyle(root_style);
+var cur_theme = 'light_theme'
 
-// chat gpt
-var elementsWithListener = [];
+var themes = {dark_theme:
+              [['--Primary_color', '#730099'],
+              ['--Secundary_color', '#7ab10e'],
+              ['--Hover_color', '#a6db3bab'],
+              ['--Background_color', '#413f3f'],
+              ['--Primary_font_color', '#FFFFFF'],
+              ['--Secundary_font_color', '#ffffff']],
+              light_theme:
+              [['--Primary_color', '#EE8B31'],
+              ['--Secundary_color', '#EE3136'],
+              ['--Hover_color', '#f72d34a2'],
+              ['--Background_color', '#ffffff'],
+              ['--Primary_font_color', '#FFFFFF'],
+              ['--Secundary_font_color', '#000000']]
+            };
 
-/*
-document.addEventListener('click', function(event) {
-  if (event.target.hasAttribute('onclick') || event.target.closest('[onclick]')) {
-    // If the clicked element or one of its ancestors has an onclick event, do nothing
-    event.stopPropagation();
-  } else if (!event.target.classList.contains('menu')) {
-    // Get all elements with the 'menu' class
-    var menuElements = document.querySelectorAll('.menu');
 
-    // Loop through each menu element and set its display to 'none'
-    for (var i = 0; i < menuElements.length; i++) {
-      menuElements[i].style.display = 'none';
-    }
+console.log(root_style);
+console.log(root_properties);
 
-    // Add the clicked element to the list of elements with the event listener
-    if (!elementsWithListener.includes(event.target)) {
-      elementsWithListener.push(event.target);
-    }
+if (localStorage.getItem('cur_theme') === null){
+  localStorage.setItem('cur_theme', cur_theme);
 
-    // Print the list of elements with the event listener on the console
-    console.log('Elements with event listener:', elementsWithListener);
-  }
-});
+} else{
+  cur_theme = localStorage.getItem('cur_theme');
+  for (i = 0; i < themes[cur_theme].length; i++){
 
-*/
+    root_style.style.setProperty(themes[cur_theme][i][0], themes[cur_theme][i][1]);
+  };
+};
+
+
+function change_theme(sel_theme='light_theme'){
+
+  for (i = 0; i < themes[sel_theme].length; i++){
+
+    root_style.style.setProperty(themes[sel_theme][i][0], themes[sel_theme][i][1]);
+  };
+
+  cur_theme = sel_theme
+  localStorage.setItem('cur_theme', cur_theme);
+  console.log(cur_theme)
+
+};
+
 
 document.addEventListener('click', function (event){
 
