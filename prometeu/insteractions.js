@@ -1,7 +1,11 @@
 var ui_menus = document.getElementsByClassName('menu');
 var root_style = document.querySelector(':root');
 var root_properties = getComputedStyle(root_style);
-var cur_theme = 'light_theme'
+var cur_theme = 'light_theme';
+var theme_buttons = document.getElementsByClassName("field");
+var sel_theme_button = localStorage.getItem('sel_theme_button');
+
+localStorage.setItem('sel_theme_button', sel_theme_button)
 
 var themes = {dark_theme:
               [['--Primary_color', '#730099'],
@@ -19,9 +23,8 @@ var themes = {dark_theme:
               ['--Secundary_font_color', '#000000']]
             };
 
-
-console.log(root_style);
-console.log(root_properties);
+// console.log(root_style);
+// console.log(root_properties);
 
 if (localStorage.getItem('cur_theme') === null){
   localStorage.setItem('cur_theme', cur_theme);
@@ -34,20 +37,21 @@ if (localStorage.getItem('cur_theme') === null){
   };
 };
 
+  
+if (localStorage.getItem('sel_theme_button') === null){
+  localStorage.setItem('sel_theme_button', 'light');
 
-function change_theme(sel_theme='light_theme'){
-
-  for (i = 0; i < themes[sel_theme].length; i++){
-
-    root_style.style.setProperty(themes[sel_theme][i][0], themes[sel_theme][i][1]);
+} else{
+  for (i=0; i < theme_buttons.length; i++){
+    if (theme_buttons[i].id == sel_theme_button){
+      
+      theme_buttons[i].classList.add('selected_field');
+    } else{
+      theme_buttons[i].classList.remove('selected_field');
+    }
+    console.log(theme_buttons[i].classList)
   };
-
-  cur_theme = sel_theme
-  localStorage.setItem('cur_theme', cur_theme);
-  console.log(cur_theme)
-
 };
-
 
 document.addEventListener('click', function (event){
 
@@ -65,8 +69,39 @@ document.addEventListener('click', function (event){
 });
 
 
+function change_theme(sel_theme='light_theme', element){
+
+  for (i = 0; i < themes[sel_theme].length; i++){
+
+    root_style.style.setProperty(themes[sel_theme][i][0], themes[sel_theme][i][1]);
+  };
+
+  cur_theme = sel_theme
+  localStorage.setItem('cur_theme', cur_theme);
+
+  sel_theme_button = element.id
+
+  for (i=0; i < theme_buttons.length; i++){
+    if (theme_buttons[i].id == sel_theme_button){
+      
+      theme_buttons[i].classList.add('selected_field');
+    } else{
+      theme_buttons[i].classList.remove('selected_field');
+    }
+    console.log(theme_buttons[i].classList)
+  };
 
 
+  console.log(sel_theme_button)
+
+  localStorage.setItem('sel_theme_button', sel_theme_button)
+
+
+  console.log(element.id)
+  
+  console.log(cur_theme)
+
+};
 
 function call(target_id){
 

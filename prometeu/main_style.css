@@ -342,7 +342,7 @@ aside{
 .config{
     position: fixed;
     bottom: 3rem;
-    height: 80%;
+    height: fit-content;
     margin: 0.3rem;
     background-color: var(--Primary_color);
     box-shadow: var(--Box_shadow);
@@ -356,20 +356,35 @@ aside{
 }
 
 .field{
-    display: block;
+    display: flex;
     margin: 0.2rem;
-    background-color: var(--Secundary_color);
+    background-color: var(--Primary_color);
     box-shadow: var(--Box_shadow);
     border-radius: 1rem;
     padding: 1rem;
+    font-size: 1.5rem;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.field label{
+.field p{
     color: var(--Primary_font_color);
+    display: flex;
 }
 
-.field label:checked{
-    color: var(--Secundary_color);
+.field:hover{
+    cursor: pointer;
+}
+
+.selected_field{
+    background-color: var(--Secundary_color);
+}
+
+.themes{
+    display: flex;
+    flex-flow: row;
 }
 
 /** pagina inicial **/
@@ -609,7 +624,6 @@ aside{
 
     .config{
         align-items: start;
-        height: 40%;
     }
 
     .field{
@@ -737,9 +751,7 @@ aside{
         font-size: 30px;
     }
 
-    .config{
-        height: fit-content;
-    }
+
 
     
 

@@ -59,19 +59,25 @@
       <div class="config menu" id="config_menu">
          <a class="close_menu icon" onclick="close_element('config_menu')"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
          <h4>Aparência</h4>
+         <h5>Temas:</h5>
          <div class="themes">
-            <h5>Temas:</h5>
-            <div class="field" onclick="change_theme('dark_theme')">
-               <input type="radio" name="themes" id="dark">
-               <label for="dark">Tema escuro</label>
+            <div class="field " id="dark" onclick="change_theme('dark_theme', this)">
+               <a class="icon">
+                  <i class="fa-sharp fa-solid fa-cloud-moon"></i>
+                  <p>Tema Escuro</p>
+               </a>
             </div>
-            <div class="field" onclick="change_theme()">
-               <input type="radio" name="themes" id="light" checked="checked">
-               <label for="light">Tema claro</label>
+            <div class="field " id='light' onclick="change_theme('light_theme', this)">
+               <a class="icon">
+                  <i class="fa-solid fa-sun"></i>
+                  <p>Tema claro</p>
+               </a>
             </div>
-            <div class="field">
-               <input type="radio" name="themes" id="high_contrast">
-               <label for="high_contrast">Alto contraste</label>
+            <div class="field " id='contrast' onclick="change_theme('high_contrast', this)">
+               <a class="icon">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>Alto-contraste</p>
+               </a>
             </div>
          </div>
          <!-- 
