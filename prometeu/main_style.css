@@ -423,6 +423,7 @@ aside{
 #sumary{
     grid-area: sumario;
     text-indent: 1rem;
+    color: var(--Primary_font_color);
 }
 
 .intro_links{
@@ -604,6 +605,7 @@ aside{
     justify-content: center;
     flex-flow: column;
     margin: 1rem;
+    color: var(--Secundary_font_color);
 }
 
 
