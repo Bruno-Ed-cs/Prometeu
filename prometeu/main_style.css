@@ -136,6 +136,11 @@ article{
     max-width: 50rem;
 }
 
+img + p::first-letter{
+    font-size: 3rem;
+    color: var(--Secundary_color);
+}
+
 article p{
     margin: 0.15rem 0 0.15rem 0;
     text-indent: 2rem;
