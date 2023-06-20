@@ -136,9 +136,14 @@ article{
     max-width: 50rem;
 }
 
-img + p::first-letter{
+h2 + img + p::first-letter{
     font-size: 3rem;
     color: var(--Secundary_color);
+    float: left;
+}
+
+h2 + img + p{
+    text-indent: 0px;
 }
 
 article p{
