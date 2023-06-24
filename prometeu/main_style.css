@@ -136,14 +136,14 @@ article{
     max-width: 50rem;
 }
 
-h2 + img + p::first-letter{
+article p:first-of-type::first-letter{
     font-size: 3rem;
     color: var(--Secundary_color);
     float: left;
 }
 
-h2 + img + p{
-    text-indent: 0px;
+article p:first-of-type{
+    text-indent: 0;
 }
 
 article p{
@@ -422,6 +422,9 @@ aside{
     max-width: 100%;
 }
 
+.head{
+    margin: 0.5rem;
+}
 
 .intro{
     grid-area: intro;
@@ -434,6 +437,7 @@ aside{
     grid-area: sumario;
     text-indent: 1rem;
     color: var(--Primary_font_color);
+    margin: 0.5rem;
 }
 
 .intro_links{
@@ -505,11 +509,13 @@ aside{
 .title{
     grid-area: head;
     margin: auto;
+    margin-left: 0.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.8rem;
     color: var(--Primary_font_color);
+
 }
 
 
@@ -526,12 +532,19 @@ aside{
 
 .resume p{
     margin: 0.5rem;
+    overflow-y: scroll;
+    max-height: 5.5rem;
 }
 
 .thumbnail{
     grid-area: img;
     max-width: 10rem;
     max-height: 10rem;
+    overflow: hidden;
+}
+
+.thumbnail img{
+    object-fit: cover;
 }
 
 /**Página dos artigos**/
@@ -573,7 +586,7 @@ aside{
 
 .display{
     overflow: hidden;
-    max-height: 7rem;
+    max-height: 6rem;
     max-width: 100%;
     margin: 0.5rem;
     border-radius: 1rem;
@@ -581,9 +594,7 @@ aside{
 
 .display img{
     max-width: 100%;
-    height: auto;
     object-fit: cover;
-    object-position: 50% 50%;
     border-radius: 1rem;
 }
 

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html leng="pt-br" >
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+      <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
+      <script src="insteractions.js" async></script>
+      <title>Prometeu</title>
+      <link rel="stylesheet" href="main_style.css">
+      <link rel="icon" href="imagens/iconepag-red.png">
+   </head>
+   <body>
+      <!--Menu do topo-->
+      <nav>
+         <li >
+            <a onclick="call('side_menu')" class="button_menu icon">
+               <i class="fa-solid fa-bars fa-xl"></i> 
+               <p>Menu</p>
+            </a>
+         </li>
+         <li>
+            <a class="icon" href="inicio.html">
+               <span><i class="fa-solid fa-house fa-sm"></i></span>
+               <p>Início</p>
+            </a>
+         </li>
+         <li class="selected">
+            <a class="icon" href="artigos.html">
+               <i class="fa-solid fa-newspaper fa-sm"></i>
+               <p>Artigos</p>
+            </a>
+         </li>
+         <li>
+            <a class="icon" href="timeline.html">
+               <i class="fa-solid fa-timeline fa-sm"></i></i>
+               <p>Linha do tempo</p>
+            </a>
+         </li>
+         <li>
+            <a class="icon" onclick="call('config_menu')">
+               <i class="fa-solid fa-gear fa-sm"></i>
+               <p>Configurações</p>
+            </a>
+         </li>
+         <li>
+            <a onclick="call('bar')" class="icon">
+               <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+               <p>Busca</p>
+            </a>
+            <div class="search_bar menu" id="bar">
+               <input type="text">
+               <button><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+            </div>
+         </li>
+         <img id="logo" src="imagens/logopainel.png" alt="logo">
+      </nav>
+      <!-- Menu de Configurações -->
+      <div class="config menu" id="config_menu">
+         <a class="close_menu icon" onclick="close_element('config_menu')"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+         <h4>Aparência</h4>
+         <h5>Temas:</h5>
+         <div class="themes">
+            <div class="field " id="dark" onclick="change_theme('dark_theme', this)">
+               <a class="icon">
+                  <i class="fa-sharp fa-solid fa-cloud-moon"></i>
+                  <p>Tema Escuro</p>
+               </a>
+            </div>
+            <div class="field " id='light' onclick="change_theme('light_theme', this)">
+               <a class="icon">
+                  <i class="fa-solid fa-sun"></i>
+                  <p>Tema claro</p>
+               </a>
+            </div>
+            <div class="field " id='contrast' onclick="change_theme('high_contrast', this)">
+               <a class="icon">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>Alto-contraste</p>
+               </a>
+            </div>
+         </div>
+         <!-- 
+            <div class="font_config">
+             <input type="radio" name="sizes" id="20px">
+             <label for="dark">Tema Escuro</label>
+             <input type="radio" name="sizes" id="light">
+             <label for="light">Tema claro</label>
+             <input type="radio" name="sizes" id="high_contrast">
+             <label for="dark">Alto contraste</label>
+            </div>
+            -->
+      </div>
+      <!--Menu lateral dos artigos -->
+      <aside id="side_menu" class="menu">
+         <div class="top">
+            <h4>Artigos</h4>
+            <a class="icon close_menu" onclick="close_element('side_menu')"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+         </div>
+         <div class="artigos">
+	    <a href="artigo_zumbi_filosofico_1.html">O Apocalipse Zumbi (filosófico!) – parte 1</a>
+	    <a href="artigo_zumbi_filosofico_2.html">O Apocalipse Zumbi (filosófico!) – parte 2</a>
+            <a href="artigo_qualia.html">Qualia</a>
+            <a href="artigo_epifenomenalismo.html">Epifenomenalismo</a>
+            <a href="artigo_dualismo.html">Dualismo</a>
+         </div>
+         <div class="extras">
+            <a class="icon" href="referencias.html">
+               <i class="fa-solid fa-circle-info fa-sm"></i>
+               <p>Referências</p>
+            </a>
+            <a class="icon" href="sobre.html">
+               <i class="fa-solid fa-address-card fa-sm"></i>
+               <p>Sobre</p>
+            </a>
+         </div>
+      </aside>
+      <!--Div dos artigos-->
+      <article>
+         <h2>O Apocalipse Zumbi (filosófico!) – parte 1
+</h2>
+                  <video controls class="media">
+            <source src="Video/Shaun_of_The_Dead.mp4" type="video/mp4">
+            <source src="Video/Shaun_of_The_Dead.mp4.ogg" type="video/ogg">
+         </video>
+         <p>
+	Você acorda em uma segunda-feira ordinária para tropeçar com o pé direito e cair em mais um dia de cotidiano: levantar, escovar os dentes, banho em uma harmonia de música e gotas... entre isso e o fechar atrás de si a porta para ir à escola, há sempre o momento ritualístico de sentar-se à mesa com sua família para tomar café e comer pão com manteiga. Seu rosto iluminado pelo sol que penetra ainda sonolento a janela e pela tela do seu celular, onde sucedem-se os frames de um vídeo qualquer no YouTube. Todos mastigam, como sempre, e reclamam da vida, como sempre, e reclamam inclusive que o volume do seu celular está alto demais, como sempre, impedindo que eles possam continuar a reclamar da vida em todo o seu potencial, como sempre.</a>.
+         </p>
+         <p>
+	Poderia ficar assim para sempre. No entanto, o celular da sua mãe desata a tocar, e interrompe-os. Onde está mesmo? O celular da sua mãe toca, toca, toca... quase chora, mas não há quem atenda. Meu Deus, onde está o diabo do celular? Será que colocou sem querer dentro da garrafa de café? O celular da sua mãe... soa tanto como o alarme do despertador! Você olha para suas mãos e percebe horrorizado que nesse tempo todo não era um pão que comia. Entre seus dedos jazem números duros, metalicamente amargos, dum gosto de pilha miserável atracado ao céu da boca, que juntos formam um horário: 6:30.
+         </p>
+         <p>
+            Você acorda em uma segunda-feira ordinária para tropeçar com o pé direito e cair em mais um dia de cotidiano: levantar, escovar os dentes, banho em uma harmonia de música e gotas... entre isso e o fechar atrás de si a porta para ir à escola, há sempre o momento ritualístico de sentar-se à mesa com sua família para tomar café e comer pão com manteiga. Seu rosto iluminado pelo sol que penetra ainda sonolento a janela e pela tela do seu celular, onde sucedem-se os frames de um vídeo qualquer no YouTube. Todos mastigam, como sempre, e reclamam da vida, como sempre, e reclamam inclusive que o volume do seu celular está alto demais, como sempre, impedindo que eles possam continuar a reclamar da vida em todo o seu potencial, como sempre.          </p>
+         <p>
+            Entre as sucessões do hábito, porém, entremeia-se algo de diferente. Você abandona o vídeo que antes dominava sua atenção e passa a contemplar as pessoas que te rodeiam. Seus rostos, como ondas, arrastam-no a alguma impressão obscura. É uma impressão vaga, mas espinhosa, amolada, cortante. Como uma trepadeira ao pé de um muro, vai brotando, crescendo, espalhando-se vigorosamente em sua consciência, até dominar a totalidade dos seus pensamentos. Uma estranheza em flor espreita em cada sombra projetada na cozinha, e desabrocha em um devaneio: 
+“Essas pessoas... essas pessoas familiares, que conheço desde que me lembro... tantos momentos legais e terríveis que vivi ao lado delas... como sei que elas realmente são conscientes como eu? Estou vendo elas agora, claro. Mas agora há pouco, em meus sonhos, também via. E via tão bem que jamais poderia adivinhar que tudo não passava de uma ilusão. Se eu posso ser enganado tão fácil assim pelas minhas percepções, como poderia confiar meramente nas aparências das coisas? Sim, eu vejo as pessoas falando, e rindo, e mastigando... tudo isso parece indicar que elas são seres reais fazendo isso conscientemente e sentindo qualquer coisa dentro delas. Mas se eu não consigo sentir os sentimentos delas! Como ter certeza de que elas não são parte de outro sonho meu, como aquele? Ou como robôs, programados para agir como se tivessem consciência sem ter nada além de um mecanismo lógico dentro deles? Meu Deus! Ou, pior ainda, como zumbis! 
+         </p>
+         <p>
+            Você já está fora de casa, a caminho da escola. E simplesmente não consegue mais ver as pessoas espalhadas pela rua da mesma forma. Imaginações mórbidas vão vomitando mais imaginações mórbidas na sua mente. Todas as vozes soam como grunhidos vagos, todos os passos são lentos, em todos os olhares há um vazio imenso. Um apocalipse inteiro só para você. Os mortos caminham, e parecem tão vivos! Os mortos comem pão com manteiga, e você pode estar sozinho nesse mundo. Talvez não possam devorar seu cérebro, sim, mas sua alma já está toda carcomida de solidão e dúvida. Você sente falta da sua família, e dos seus amigos, e da humanidade. Continua a andar, no entanto. O que mais poderia fazer? 
+         </p>
+         <p>
+           Tudo o que importava era chegar em casa. Daí ao quarto, à cadeira e ao computador. Finalmente salvar-se eletronicamente desse dia inteiro feito de delírio. Com as melhores palavras que consegue juntar com a cola barata do seu intelecto, e então digitar na barra de pesquisa do navegador, você busca pelos princípios do seu raciocínio. Com tantas pessoas tendo vivido ao longo da história, você não pode ser o único a ter pensado nisso.
+         </p>
+         <p>
+            Sua intenção era encontrar qualquer fonte que o chamasse de absurdo, que o refutasse, que extirpasse qualquer base filosófica para pensar tal coisa, e que, portanto, anulasse esse martelo existencial esmagando continuamente o seu cérebro, obtendo por fim o conforto de admitir a sua própria burrice. Não sem alguma desconfiança, claro: as pessoas que escreveram os artigos poderiam não ser pessoas! No entanto, você  contém os seus receios e passa a mover os dedos. Se é filosoficamente que esses mortos-vivos o atormentam, é filosoficamente que encontrará uma forma de extirpá-los da face da terra. 
+         </p>
+
+               <a href=artigo_zumbi_filosofico_2.html>Continua...!</a>
+
+      </article>
+   </body>
+</html>
