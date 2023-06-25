@@ -41,7 +41,7 @@
          </div>
          </a>
          <h2>Fenomenologia</h2>
-         <a href='artigo_qualia.html' class="showcase">
+         <a href='Artigos/artigo_qualia.php' class="showcase">
             <div class="show-header">
                <h4>Kate Bush subindo a colina da qualia (um acordo com... um morcego?)</h4>
             </div>

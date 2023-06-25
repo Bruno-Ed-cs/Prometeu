@@ -25,8 +25,8 @@
     </li>
     <li>
     <a class="icon" onclick="call('config_menu')">
-        <i class="fa-solid fa-gear fa-sm"></i>
-        <p>Configurações</p>
+    <i class="fa-solid fa-palette fa-sm"></i>
+        <p>Temas</p>
     </a>
     </li>
     <li>
