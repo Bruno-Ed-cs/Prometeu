@@ -84,9 +84,9 @@
     <a class="selectable icon close_menu" onclick="close_element('side_menu')"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
     </div>
     <div class="artigos">
-    <a href="/Prometeu/Artigos/artigo_qualia.php">Qualia</a>
-    <a href="/Prometeu/Artigos/artigo_epifenomenalismo.php">Epifenomenalismo</a>
-    <a href="/Prometeu/Artigos/artigo_dualismo.php">Dualismo</a>
+    <a class="selectable" href="/Prometeu/Artigos/artigo_qualia.php">Qualia</a>
+    <a class="selectable" href="/Prometeu/Artigos/artigo_epifenomenalismo.php">Epifenomenalismo</a>
+    <a class="selectable" href="/Prometeu/Artigos/artigo_dualismo.php">Dualismo</a>
     </div>
     <div class="extras">
     <a class="selectable icon" href="/Prometeu/referencias.php">
