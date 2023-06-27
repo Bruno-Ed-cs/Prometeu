@@ -5,6 +5,30 @@ var cur_theme = 'light_theme';
 var theme_buttons = document.getElementsByClassName("field");
 var sel_theme_button = localStorage.getItem('sel_theme_button');
 
+var url = window.location.pathname;
+var selectables = document.getElementsByClassName('selectable');
+
+
+console.log(selectables);
+
+for (var i = 0; i < selectables.length; i++) {
+  console.log(selectables[i]);
+  var href = selectables[i].getAttribute('href');
+  console.log(href);
+  
+  if (href === url || href === "") {
+    if (href.includes('Artigos')){
+      selectables[i].className('selected');
+    } else{
+      selectables[i].parentNode.classList.add('selected');
+      console.log('ok')
+    }
+    
+  }
+}
+
+
+
 var themes = {
   
               dark_theme:

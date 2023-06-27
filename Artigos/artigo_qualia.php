@@ -5,30 +5,30 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
       <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
-      <script src="insteractions.js" async></script>
+      <script src="../insteractions.js" async></script>
       <title>Prometeu</title>
-      <link rel="stylesheet" href="main_style.css">
-      <link rel="icon" href="imagens/iconepag-red.png">
+      <link rel="stylesheet" href="../main_style.css">
+      <link rel="icon" href="../imagens/iconepag-red.png">
    </head>
    <body>
       <!--Menu do topo-->
-      <?php include('navbar.php'); ?>
+      <?php include('../navbar.php'); ?>
       <!--Div dos artigos-->
       <article>
          <h2>Kate Bush subindo a colina da qualia (um acordo com... um morcego?)</h2>
-         <img class="media" src="I1/Kate_Bush.jpeg" alt="foto de Kate Bush fantasiada de morcego">
+         <img class="media" src="../I1/Kate_Bush.jpeg" alt="foto de Kate Bush fantasiada de morcego">
          <p>
             Uma das melhores experiências compartilhadas provocadas por Stranger Things foi fazer com que milhões de pessoas levitassem (ao menos por dentro!) junto com a Max ouvindo Running Up That Hill da Kate Bush. 
             E isso não poderia ser mais conveniente, considerando que essa música é precisamente sobre compartilhar experiências subjetivas.
-            Se você já ouviu ela por todos os lugares mas ainda não tiver parado para focar em sua letra, recomendo que <a href="https://www.letras.mus.br/kate-bush/262489/">dê uma olhada agora</a>.
+            Se você já ouviu ela por todos os lugares mas ainda não tiver parado para focar em sua letra, recomendo que <a href="../https://www.letras.mus.br/kate-bush/262489/">dê uma olhada agora</a>.
          </p>
          <p>
             Agora que já trocamos essa experiência, estamos prontos para entrar em um breve experimento mental.
             Imagine que após a Kate Bush chegar ao topo da colina, Deus de fato se compadecesse da sua angústia e a trocasse de lugar com seu amante, para que ele possa saber como ela se sente, e vice-versa.
          </p>
          <video controls class="media">
-            <source src="Video/Kate_Bush.mp4" type="video/mp4">
-            <source src="Video/Kate_Bush.ogg" type="video/ogg">
+            <source src="../Video/Kate_Bush.mp4" type="video/mp4">
+            <source src="../Video/Kate_Bush.ogg" type="video/ogg">
          </video>
          <p>
             Suponha que você é o amante em questão. Agora você sabe como é ser a Kate Bush, e a Kate Bush sabe como é ser você, não é? Ou será que não? Pense um pouco sobre isso: enquanto a Kate Bush está sendo você, onde você está? Bom, definitivamente não em você mesmo! Como nós concordamos, agora você está dentro da Kate Bush.
@@ -49,8 +49,8 @@
             Nós não fomos os únicos a chegar a essa conclusão com o experimento da Kate Bush, claro. No seu famoso artigo “What Is It Like to Be a Bat?” (Como é ser um morcego?) o filósofo Thomas Nagel propõe que o limite para o que pode ser analisado de forma objetiva não está nos confins do universo não observável, como talvez esperado, mas precisamente no caráter subjetivo da experiência, algo que de cara aparenta ser tão familiar e próximo de nós.
          </p>
          <div class="card" style="width: 250px;">
-            <img class="card-image" src="I1/Thomas_Nagel.jpeg" alt="foto de Thomas Nagel">
-            <div class="card-footer"><a href=timeline.html>Thomas Nagel</a></div>
+            <img class="card-image" src="../I1/Thomas_Nagel.jpeg" alt="foto de Thomas Nagel">
+            <div class="card-footer"><a href=t../imeline.html>Thomas Nagel</a></div>
          </div>
          <p>
             Os morcegos, principais focos da reflexão, têm uma forma para nós bastante estranha de sentir o mundo. Eles emitem ondas ultrassônicas que são refletidas pelas coisas ao seu redor, retornando um eco que fornece informações sobre suas distâncias, texturas e tamanhos. Você consegue imaginar em detalhes como é ser um morcego (para um morcego)? Bom, ao menos eu e o Nagel não, e duvido que os maiores especialistas em morcegos do planeta consigam. 
@@ -65,7 +65,8 @@
             Chamar essas percepções de estados qualitativos da experiência subjetiva ou como-é-ser-fulano soa longo demais, então os filósofos, há muito tempo perturbados por essas questões, criaram uma palavra bem mais elegante e conveniente para as descrever: qualia. Compreender a qualia é essencial para desvendar a natureza da consciência e o problema mente-corpo, que serão discutidos aqui posteriormente.
          </p>
          <p>
-            Mas de que exatamente são feitos os qualia? Podem todos os nossos amores, ódios e alegrias serem reduzidas a uma descrição física das substâncias químicas e impulsos elétricos saltando pelo nosso cérebro, ou há algo mais aí? De início, soa óbvio que existe algo distinto e intrínseco que  é ser eu, você, ou um morcego, mas alguns filósofos não tem tanta certeza assim. Poderia qualia ser apenas impressão nossa e não algo de fato “real”? Se sim, será que a Kate Bush ainda tem chance de realizar seu sonho de compartilhar experiências? Se você estiver interessado em uma discussão mais extensa sobre esses tópicos, com direito a rinha de filósofos, falamos sobre no nosso artigo sobre  <a href=artigo_y.html>qualia epifenomenal e fisicalismo</a>!
+            Mas de que exatamente são feitos os qualia? Podem todos os nossos amores, ódios e alegrias serem reduzidas a uma descrição física das substâncias químicas e impulsos elétricos saltando pelo nosso cérebro, ou há algo mais aí? De início, soa óbvio que existe algo distinto e intrínseco que  é ser eu, você, ou um morcego, mas alguns filósofos não tem tanta certeza assim. Poderia qualia ser apenas impressão nossa e não algo de fato “real”? Se sim, será que a Kate Bush ainda tem chance de realizar seu sonho de compartilhar experiências? Se você estiver interessado em uma discussão mais extensa sobre esses tópicos, com direito a rinha de filósofos, falamos sobre no nosso artigo sobre  
+            <a href="/Prometeu/Artigos/artigo_epifenomenalismo.php">qualia epifenomenal e fisicalismo</a>!
          </p>
       </article>
    </body>

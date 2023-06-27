@@ -237,6 +237,7 @@ article .card{
 /** Menu lateral **/
 
 aside{
+
     display: none;
     flex-flow: column;
     align-items: center;
@@ -249,6 +250,7 @@ aside{
     margin: 0.3rem;
     border-radius: 1rem;
     box-shadow: var(--Box_shadow);
+    width: calc(100% - 0.6rem);
 
 }
 
@@ -695,6 +697,10 @@ aside{
     }
     .card_container{
         grid-template-columns: auto auto;
+    }
+
+    aside{
+        width: 70%;
     }
 
 }

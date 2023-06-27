@@ -12,7 +12,7 @@
    </head>
    <body>
       <!--Menu do topo-->
-      <?php include('navbar.php'); ?>
+      <?php include('../navbar.php'); ?>
       <!--Div dos artigos-->
       <article>
          <h2>Roubou as cores do universo? Melhor ligar pro Saul. (qualia epifenomenal vs fisicalismo) </h2>
