@@ -12,7 +12,9 @@
    </head>
    <body>
       <!--Menu do topo-->
-      <?php include('/Prometeu/navbar.php'); ?>
+      <?php 
+      include $_SERVER["DOCUMENT_ROOT"] . "/Prometeu/navbar.php"; 
+      ?>
       <!--Div dos artigos-->
       <article>
          <h2>Eu teria conseguido se não fossem esses filósofos enxeridos e esse Gilbert Ryle idiota! </h2>

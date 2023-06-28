@@ -12,7 +12,9 @@
    </head>
    <body>
       <!--Menu do topo-->
-      <?php include('navbar.php'); ?>
+      <?php 
+      include $_SERVER["DOCUMENT_ROOT"] . "/Prometeu/navbar.php"; 
+      ?>
       <!--Div dos artigos-->
       <article>
          <h2>O Apocalipse Zumbi (filosófico!) – parte 1

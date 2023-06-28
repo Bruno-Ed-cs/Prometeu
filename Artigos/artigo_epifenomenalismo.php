@@ -5,25 +5,27 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
       <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
-      <script src="insteractions.js" async></script>
+      <script src="/Prometeu/insteractions.js" async></script>
       <title>Prometeu</title>
-      <link rel="stylesheet" href="main_style.css">
-      <link rel="icon" href="imagens/iconepag-red.png">
+      <link rel="stylesheet" href="/Prometeu/main_style.css">
+      <link rel="icon" href="/Prometeu/imagens/iconepag-red.png">
    </head>
    <body>
       <!--Menu do topo-->
-      <?php include('../navbar.php'); ?>
+      <?php 
+      include $_SERVER["DOCUMENT_ROOT"] . "/Prometeu/navbar.php"; 
+      ?>
       <!--Div dos artigos-->
       <article>
          <h2>Roubou as cores do universo? Melhor ligar pro Saul. (qualia epifenomenal vs fisicalismo) </h2>
-         <img class="media" src="I1/Saul_Goodman.jpeg" alt="foto de Saul Goodman">
+         <img class="media" src="/Prometeu/I1/Saul_Goodman.jpeg" alt="foto de Saul Goodman">
          <p>
             Catástrofe total! Imagine que, de repente, o mundo inteiro se torne preto e branco, talvez porque atingimos um novo estágio do roteiro do universo, como em Better Call Saul. As pessoas que vivem agora, embora definitivamente fossem sentir uma falta enorme de apreciar as cores das flores ou os tons do pôr do sol, ao menos ainda poderiam ter uma vaga memória de um mundo colorido. Pior ainda seria ser Mary, uma pobre garota que nasceu precisamente no momento em que todas as cores sumiram!    
          </p>
          </p>
          <video class="media" width="560" height="315" controls>
-            <source src="Video/Preto_Branco.mp4" type="video/mp4">
-            <source src="Video/Branco_Preto.ogg" type="video/ogg">
+            <source src="/Prometeu/Video/Preto_Branco.mp4" type="video/mp4">
+            <source src="/Prometeu/Video/Branco_Preto.ogg" type="video/ogg">
          </video>
          <p>
             Um fenômeno tão bizarro naturalmente iria aumentar de forma considerável o interesse dos pesquisadores no estudo da cromática. Mary, em parte pela incrível coincidência de seu nascimento, em parte por seu espírito curioso, acaba se especializando na neurofisiologia da visão. 
@@ -32,7 +34,7 @@
             Sendo uma cientista muito dedicada, após décadas de estudo intenso ela adquire todas as informações físicas possíveis sobre a natureza das cores. Seu conhecimento vai desde as exatas descrições matemáticas para os comprimentos das ondas de luz emitidas por cada objeto até precisamente como essas ondas estimulam a retina e são depois processadas pelo cérebro, causando a percepção da cor.  
          </p>
          <p>
-            Um dia, no entanto, tudo repentinamente volta ao normal. Mary olha pela janela e contempla pela primeira vez o céu azul exuberante sendo emoldurado pelo verde profundo das árvores da sua vizinhança. Ela irá aprender alguma coisa então, ou não? Parece óbvio que ela irá aprender algo, isto é, a própria experiência de ver uma cor. Se antes ela já tinha todo o conhecimento físico possível sobre as cores, então existe algo além do físico no mundo: <a href=artigo_x.html>Qualia.</a>
+            Um dia, no entanto, tudo repentinamente volta ao normal. Mary olha pela janela e contempla pela primeira vez o céu azul exuberante sendo emoldurado pelo verde profundo das árvores da sua vizinhança. Ela irá aprender alguma coisa então, ou não? Parece óbvio que ela irá aprender algo, isto é, a própria experiência de ver uma cor. Se antes ela já tinha todo o conhecimento físico possível sobre as cores, então existe algo além do físico no mundo: <a href=a/Prometeu/rtigo_x.html>Qualia.</a>
          </p>
          <p>
             Ou ao menos é isso que o filósofo Frank Jackson conclui em seu “argumento do quarto de Mary “, o qual eu apresentei de uma maneira um pouco deturpada aqui (no original a protagonista é mais sofrida, sendo trancada em isolamento em um quarto preto e branco!). Com isso ele pretende refutar o fisicalismo, que é a tese filosófica que tudo que existe no universo, inclusive a mente, é físico. Em seu lugar, ele defende que existe o que chama de qualia epifenomenal. Mas o que exatamente isso quer dizer? 
@@ -44,18 +46,18 @@
             Para o Frank Jackson nosso cérebro e a experiência subjetiva que ele produz têm uma relação similar a nós e nossas sombras. A diferença é que, enquanto uma sombra ainda pode alterar de forma notável a realidade física, como ao privar de luz e resfriar a superfície em que se manifesta, ele utiliza um sentido de epifenômeno onde o subproduto não tem efeitos sobre o mundo concreto em absoluto. 
          </p>
          <p>
-            Nesse caso, a nossa atividade cerebral física, através da sua atividade, geraria um fenômeno não físico no universo, que é a nossa experiência subjetiva, ou qualia. A qualia, por sua vez, não produz nenhum impacto sobre a realidade palpável, e é só um efeito colateral dela. Ele defende, então, uma certa forma de <a href=artigo_z.html>dualismo.</a> 
+            Nesse caso, a nossa atividade cerebral física, através da sua atividade, geraria um fenômeno não físico no universo, que é a nossa experiência subjetiva, ou qualia. A qualia, por sua vez, não produz nenhum impacto sobre a realidade palpável, e é só um efeito colateral dela. Ele defende, então, uma certa forma de <a href=a/Prometeu/rtigo_z.html>dualismo.</a> 
          </p>
          <p>
             O filósofo Daniel Dennett, no entanto, não é convencido tão facilmente pela descoberta de Mary. Ele propõe que ao ler o argumento nós somos levados a subestimar o que significa afirmar que ela conhece todos os fatos físicos sobre as cores, até porque na prática é inimaginável alguém possuir todo o conhecimento possível sobre qualquer coisa.
          </p>
          <div class="card" style="width: 250px;">
-            <img class="card-image" src="I1/Daniel_Dennett.jpeg" alt="foto de Daniel Dennett">
-            <div class="card-footer"><a href=timeline.html>Daniel Dennett</a></div>
+            <img class="card-image" src="/Prometeu/I1/Daniel_Dennett.jpeg" alt="foto de Daniel Dennett">
+            <div class="card-footer"><a href=/Prometeu/timeline.php>Daniel Dennett</a></div>
          </div>
          <div class="card" style="width: 250px;">
-            <img class="card-image" src="I1/Frank_Jackson.jpeg" alt="foto de Frank Jackson">
-            <div class="card-footer"><a href=timeline.html>Frank Jackson</a></div>
+            <img class="card-image" src="/Prometeu/I1/Frank_Jackson.jpeg" alt="foto de Frank Jackson">
+            <div class="card-footer"><a href=/Prometeu/timeline.php>Frank Jackson</a></div>
          </div>
          <p>
             Ora, se ela não sabe apenas muito, ou apenas todas as informações que a humanidade juntou até agora, mas tudo, tudo mesmo, ela não iria saber exatamente que reação cada objeto que olhasse causaria no seu sistema nervoso, e que pensamentos ela teria depois que isso acontecesse? Quando olhasse para o azul do céu, ou o verde das árvores, portanto, ela não ficaria surpresa como o argumento pode levar a pensar.

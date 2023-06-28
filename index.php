@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
       <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
-      <script src="insteractions.js" async></script>
+      <script src="/Prometeu/insteractions.js" async></script>
       <title>Prometeu</title>
       <link rel="stylesheet" href="main_style.css">
       <link rel="icon" href="imagens/iconepag-red.png">
@@ -17,7 +17,7 @@
 
       <main id="wellcome">
          <div class="intro">
-            <img src="imagens/logo1.png" alt="Cérebro" >
+            <img src="/Prometeu/imagens/logo1.png" alt="Cérebro" >
             <div class="head">
                <h1>Prometeu:</h1>
                <p>Um Guia para a filosofia da mente</p>
@@ -33,7 +33,7 @@
          </div>
          <div class="intro_links" >
             <h2>Introdução:</h2>
-            <a class="links" id="link1" href="artigo_zumbi_filosofico_1.html">
+            <a class="links" id="link1" href="/Prometeu/Artigos/artigo_zumbi_filosofico_1.php">
                <div class="title">
                   <p>O Apocalipse Zumbi (Filosófico!) – Parte 1</p>
                </div>
@@ -41,18 +41,18 @@
                   <p>Você acorda em uma segunda-feira ordinária para tropeçar com o pé direito e cair em mais um dia de cotidiano: levantar, escovar os dentes, banho em uma harmonia de música e gotas... entre isso e o fechar atrás de si a porta para ir à escola, há sempre o momento ritualístico de sentar-se à mesa com sua família para tomar café e comer pão com manteiga. Seu rosto iluminado pelo sol que penetra ainda sonolento a janela e pela tela do seu celular, onde sucedem-se os frames de um vídeo qualquer no YouTube. Todos mastigam, como sempre, e reclamam da vida, como sempre, e reclamam inclusive que o volume do seu celular está alto demais, como sempre, impedindo que eles possam continuar a reclamar da vida em todo o seu potencial, como sempre. 
                   </p>
                </div>
-               <div class="thumbnail"><img src="I1/Shaun.jpg" alt="ed"></div>
+               <div class="thumbnail"><img src="/Prometeu/I1/Shaun.jpg" alt="ed"></div>
             </a>
-            <a class="links" id="link2" href="artigo_zumbi_filosofico_2.html">
+            <a class="links" id="link2" href="/Prometeu/Artigos/artigo_zumbi_filosofico_2.php">
                <div class="title">
                   <p>O Apocalipse Zumbi (Filosófico!) – Parte 2</p>
                </div>
                <div class="resume">
                   <p>Tantas páginas passaram por seus olhos que já não seria capaz de contá-las. Seria como tentar contar os carros cruzando uma rodovia movimentada em horário comercial. Nesse processo vertiginoso, porém, você acaba por fazer uma descoberta: aquilo que julgava não passar de divagações de uma mente perturbada são, na verdade, fragmentos de debates filosóficos seriamente levantados. Parte do que os filósofos chamam de “o problema das outras mentes”. Esse problema pode ser elucidado a partir de dois conceitos.</p>
                </div>
-               <div class="thumbnail"><img src="I1/I_Am_a_Hero.jpg" alt="i am a hero"></div>
+               <div class="thumbnail"><img src="/Prometeu/I1/I_Am_a_Hero.jpg" alt="i am a hero"></div>
             </a>
-            <a class="big_link" href="artigos.html">
+            <a class="big_link" href="/Prometeu/artigos.php">
                <i class="fa-solid fa-newspaper fa-lg"></i>
                <p>Artigos</p>
             </a>
