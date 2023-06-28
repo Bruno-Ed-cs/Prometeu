@@ -34,7 +34,8 @@
             Sendo uma cientista muito dedicada, após décadas de estudo intenso ela adquire todas as informações físicas possíveis sobre a natureza das cores. Seu conhecimento vai desde as exatas descrições matemáticas para os comprimentos das ondas de luz emitidas por cada objeto até precisamente como essas ondas estimulam a retina e são depois processadas pelo cérebro, causando a percepção da cor.  
          </p>
          <p>
-            Um dia, no entanto, tudo repentinamente volta ao normal. Mary olha pela janela e contempla pela primeira vez o céu azul exuberante sendo emoldurado pelo verde profundo das árvores da sua vizinhança. Ela irá aprender alguma coisa então, ou não? Parece óbvio que ela irá aprender algo, isto é, a própria experiência de ver uma cor. Se antes ela já tinha todo o conhecimento físico possível sobre as cores, então existe algo além do físico no mundo: <a href=a/Prometeu/rtigo_x.html>Qualia.</a>
+            Um dia, no entanto, tudo repentinamente volta ao normal. Mary olha pela janela e contempla pela primeira vez o céu azul exuberante sendo emoldurado pelo verde profundo das árvores da sua vizinhança. Ela irá aprender alguma coisa então, ou não? Parece óbvio que ela irá aprender algo, isto é, a própria experiência de ver uma cor. Se antes ela já tinha todo o conhecimento físico possível sobre as cores, então existe algo além do físico no mundo: 
+            <a href="/Prometeu/Artigos/artigo_qualia.php">Qualia.</a>
          </p>
          <p>
             Ou ao menos é isso que o filósofo Frank Jackson conclui em seu “argumento do quarto de Mary “, o qual eu apresentei de uma maneira um pouco deturpada aqui (no original a protagonista é mais sofrida, sendo trancada em isolamento em um quarto preto e branco!). Com isso ele pretende refutar o fisicalismo, que é a tese filosófica que tudo que existe no universo, inclusive a mente, é físico. Em seu lugar, ele defende que existe o que chama de qualia epifenomenal. Mas o que exatamente isso quer dizer? 
@@ -46,7 +47,8 @@
             Para o Frank Jackson nosso cérebro e a experiência subjetiva que ele produz têm uma relação similar a nós e nossas sombras. A diferença é que, enquanto uma sombra ainda pode alterar de forma notável a realidade física, como ao privar de luz e resfriar a superfície em que se manifesta, ele utiliza um sentido de epifenômeno onde o subproduto não tem efeitos sobre o mundo concreto em absoluto. 
          </p>
          <p>
-            Nesse caso, a nossa atividade cerebral física, através da sua atividade, geraria um fenômeno não físico no universo, que é a nossa experiência subjetiva, ou qualia. A qualia, por sua vez, não produz nenhum impacto sobre a realidade palpável, e é só um efeito colateral dela. Ele defende, então, uma certa forma de <a href=a/Prometeu/rtigo_z.html>dualismo.</a> 
+            Nesse caso, a nossa atividade cerebral física, através da sua atividade, geraria um fenômeno não físico no universo, que é a nossa experiência subjetiva, ou qualia. A qualia, por sua vez, não produz nenhum impacto sobre a realidade palpável, e é só um efeito colateral dela. Ele defende, então, uma certa forma de 
+            <a href="/Prometeu/Artigos/artigo_dualismo.php">dualismo.</a> 
          </p>
          <p>
             O filósofo Daniel Dennett, no entanto, não é convencido tão facilmente pela descoberta de Mary. Ele propõe que ao ler o argumento nós somos levados a subestimar o que significa afirmar que ela conhece todos os fatos físicos sobre as cores, até porque na prática é inimaginável alguém possuir todo o conhecimento possível sobre qualquer coisa.

@@ -30,7 +30,7 @@
          </p>
          <div class="card" style="width: 250px;">
             <img class="card-image" src="/Prometeu/I1/René_Descartes.jpeg" alt="foto de René Descartes">
-            <div class="card-footer"><a href=/Prometeu/timeline.html>René Descartes</a></div>
+            <div class="card-footer"><a href=/Prometeu/timeline.php>René Descartes</a></div>
          </div>
          <p>
             Mesmo que seus sentidos te enganem,  todos os seus raciocínios estejam errados e tudo seja como um sonho, o que você pensa necessariamente precisa ser alguma coisa para que ele possa ser iludido em primeiro lugar. Enquanto continuar pensando, portanto, é possível ter certeza que você é real de alguma forma. É daí que vem sua famosa conclusão, que você muito provavelmente já ouviu falar em algum lugar: “penso, logo existo”. 
@@ -50,7 +50,7 @@
          </p>
          <div class="card" style="width: 250px;">
             <img class="card-image" src="/Prometeu/I1/Gilbert_Ryle.jpeg" alt="foto de Gilbert Ryle">
-            <div class="card-footer"><a href=/Prometeu/timeline.html>Gilbert Ryle</a></div>
+            <div class="card-footer"><a href=/Prometeu/timeline.php>Gilbert Ryle</a></div>
          </div>
          <p>
             O Ryle demonstra em seu livro que nosso apego às ideias da “doutrina oficial” dá origem não apenas ao problema mente-corpo, mas também ao “problema das outras mentes“ (sim, a filosofia tem mais problemas que soluções!). Ele consiste no fato de que, se segundo a visão dualista a mente é completamente privada e não pode ser testemunhada por observadores externos (só você pode “ver” os seus pensamentos), não existe nenhuma razão boa o suficiente para acreditar que qualquer mente existe além da sua própria.
@@ -75,7 +75,8 @@
             O behaviorismo filosófico hoje já está bastante ultrapassado, principalmente por conta de sua tendência de excluir completamente a existência da consciência como algo além do comportamento externo, mas ainda assim ele teve uma enorme relevância para a filosofia da mente atual. Ao longo do tempo as suas partes problemáticas foram sendo descartadas e seus insights significativos, como a importante dos atos visíveis para a compreensão da consciência, foram incorporadas na tese do Funcionalismo.
          </p>
          <p>
-            O dualismo, por sua vez, apesar de ter tido vários de suas implicações problemáticas desmascaradas pelo Gilbert Ryle e não contar com tanta popularidade hoje em dia quanto já possuiu, continua tendo vários adeptos de suas versões mais modernas, como o <a href=/Prometeu/artigo_y.html>epifenomenalismo</a> e o dualismo de propriedade.
+            O dualismo, por sua vez, apesar de ter tido vários de suas implicações problemáticas desmascaradas pelo Gilbert Ryle e não contar com tanta popularidade hoje em dia quanto já possuiu, continua tendo vários adeptos de suas versões mais modernas, como o 
+            <a href="/Prometeu/Artigos/artigo_epifenomenalismo.php">epifenomenalismo</a> e o dualismo de propriedade.
          </p>
       </article>
    </body>

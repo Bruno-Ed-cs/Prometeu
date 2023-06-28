@@ -22,7 +22,7 @@
          <p>
             Uma das melhores experiências compartilhadas provocadas por Stranger Things foi fazer com que milhões de pessoas levitassem (ao menos por dentro!) junto com a Max ouvindo Running Up That Hill da Kate Bush. 
             E isso não poderia ser mais conveniente, considerando que essa música é precisamente sobre compartilhar experiências subjetivas.
-            Se você já ouviu ela por todos os lugares mas ainda não tiver parado para focar em sua letra, recomendo que <a href="/Prometeu/https://www.letras.mus.br/kate-bush/262489/">dê uma olhada agora</a>.
+            Se você já ouviu ela por todos os lugares mas ainda não tiver parado para focar em sua letra, recomendo que <a href="https://www.letras.mus.br/kate-bush/262489/">dê uma olhada agora</a>.
          </p>
          <p>
             Agora que já trocamos essa experiência, estamos prontos para entrar em um breve experimento mental.

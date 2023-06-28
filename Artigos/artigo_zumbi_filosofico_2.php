@@ -5,10 +5,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
       <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
-      <script src="insteractions.js" async></script>
+      <script src="/Prometeu/insteractions.js" async></script>
       <title>Prometeu</title>
-      <link rel="stylesheet" href="main_style.css">
-      <link rel="icon" href="imagens/iconepag-red.png">
+      <link rel="stylesheet" href="/Prometeu/main_style.css">
+      <link rel="icon" href="/Prometeu/imagens/iconepag-red.png">
    </head>
    <body>
       <!--Menu do topo-->
@@ -19,7 +19,7 @@
       <!--Div dos artigos-->
       <article>
          <h2>O Apocalipse Zumbi (filosófico!) – parte 2</h2>
-         <img class="media" src="I1/I_Am_a_Hero.jpg" alt="Imagem de I Am a Hero">
+         <img class="media" src="/Prometeu/I1/I_Am_a_Hero.jpg" alt="Imagem de I Am a Hero">
          <p>
             Tantas páginas passaram por seus olhos que já não seria capaz de contá-las. Seria como tentar contar os carros cruzando uma rodovia movimentada em horário comercial. Nesse processo vertiginoso, porém, você acaba por fazer uma descoberta: aquilo que julgava não passar de divagações de uma mente perturbada são, na verdade, fragmentos de debates filosóficos seriamente levantados. Parte do que os filósofos chamam de “o problema das outras mentes”. Esse problema pode ser elucidado a partir de dois conceitos. 
          </p>
@@ -27,7 +27,7 @@
            O primeiro, conhecido como solipsismo, tem como base a ideia de que simplesmente não se pode refutar a possibilidade de você ser a única consciência existente no universo. Afinal, todo o resto poderia existir apenas dentro da sua mente, como em um sonho — naturalmente um sonho muito convincente, já que você não teria qualquer outra realidade além daquela que sonha como ponto de referência. Até mesmo o seu corpo poderia não ser real! Só a sua mente necessariamente existiria, pois para sonhar qualquer coisa é preciso antes de uma mente que sirva de “ambiente” para esses sonhos: não tem como conceber um sonho que não tenha um sonhador. Essa lógica e conclusão está no cerne da filosofia de Descartes, e é sintetizada pela sua famosíssima frase “penso, logo existo”.
          </p>
          <p>
-            O segundo conceito — e, ao deparar-se com esse, música cinemática de suspense começa a ser tocada imediatamente em sua mente — recebe o nome de “zumbi filosófico”. Zumbi! Zumbi filosófico, ainda por cima! Então seu apocalipse pode de fato existir? Você prossegue em sua leitura. Defendido por filósofos como David Chalmers, o zumbi filosófico é uma criatura hipotética que, por definição, faz exatamente tudo que um humano faz: ri com os amigos, escreve poesia, chora ao ver um filme em que um cachorro morre, manda “durma com os anjinhos <3” para alguém querido que está prestes a ir dormir, imploraria pela própria vida com o ardor de um profeta se acontecesse de apontarem-no uma arma para a cabeça... absolutamente tudo! Tudo menos ter uma consciência dentro de si associada a todas essas ações. Tudo realizado automaticamente por um mecanismo complexo e morto. 
+            O segundo conceito — e, ao deparar-se com esse, música cinemática de suspense começa a ser tocada imediatamente em sua mente — recebe o nome de “zumbi filosófico”. Zumbi! Zumbi filosófico, ainda por cima! Então seu apocalipse pode de fato existir? Você prossegue em sua leitura. Defendido por filósofos como David Chalmers, o zumbi filosófico é uma criatura hipotética que, por definição, faz exatamente tudo que um humano faz: ri com os amigos, escreve poesia, chora ao ver um filme em que um cachorro morre, manda “durma com os anjinhos <3” para alguém querido que está prestes a ir dormir, imploraria pela própria vida com o ardor de um profeta se acontecesse de apontarem-no uma arma para a cabeça... absolutamente tudo! Tudo menos ter uma consciência dentro de si associada a todas essas ações. Tudo realizado automaticamente por um mecanismo complexo e morto. >
          </p>
          <p>
             Assustador, não? E, em princípio, qualquer um poderia ser um zumbi filosófico: sua tia, seu melhor amigo, a atendente do supermercado, a Taylor Swift! Qualquer um mesmo. Afinal, você não consegue “ver” a mente das outras pessoas. Tudo de acessível nelas é o seu comportamento externo e o mecanismo de funcionamento dos seus cérebros. E é concebível que tudo isso ocorra sem ter nada que garanta que há realmente uma “mente” associada a essas observações externas. Essa afirmação ganha ainda mais força ao deparar-se com o quanto tecnologias como o chatGPT já conseguem fazer. E melhorando a cada dia...

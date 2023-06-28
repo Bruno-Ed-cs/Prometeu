@@ -5,10 +5,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
       <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
-      <script src="insteractions.js" async></script>
+      <script src="/Prometeu/insteractions.js" async></script>
       <title>Prometeu</title>
-      <link rel="stylesheet" href="main_style.css">
-      <link rel="icon" href="imagens/iconepag-red.png">
+      <link rel="stylesheet" href="/Prometeu/main_style.css">
+      <link rel="icon" href="/Prometeu/imagens/iconepag-red.png">
    </head>
    <body>
       <!--Menu do topo-->
@@ -20,8 +20,8 @@
          <h2>O Apocalipse Zumbi (filosófico!) – parte 1
 </h2>
                   <video controls class="media">
-            <source src="Video/Shaun_of_The_Dead.mp4" type="video/mp4">
-            <source src="Video/Shaun_of_The_Dead.mp4.ogg" type="video/ogg">
+            <source src="/Prometeu/Video/Shaun_of_The_Dead.mp4" type="video/mp4">
+            <source src="/Prometeu/Video/Shaun_of_The_Dead.mp4.ogg" type="video/ogg">
          </video>
          <p>
 	Você acorda em uma segunda-feira ordinária para tropeçar com o pé direito e cair em mais um dia de cotidiano: levantar, escovar os dentes, banho em uma harmonia de música e gotas... entre isso e o fechar atrás de si a porta para ir à escola, há sempre o momento ritualístico de sentar-se à mesa com sua família para tomar café e comer pão com manteiga. Seu rosto iluminado pelo sol que penetra ainda sonolento a janela e pela tela do seu celular, onde sucedem-se os frames de um vídeo qualquer no YouTube. Todos mastigam, como sempre, e reclamam da vida, como sempre, e reclamam inclusive que o volume do seu celular está alto demais, como sempre, impedindo que eles possam continuar a reclamar da vida em todo o seu potencial, como sempre.</a>.
@@ -45,7 +45,7 @@
             Sua intenção era encontrar qualquer fonte que o chamasse de absurdo, que o refutasse, que extirpasse qualquer base filosófica para pensar tal coisa, e que, portanto, anulasse esse martelo existencial esmagando continuamente o seu cérebro, obtendo por fim o conforto de admitir a sua própria burrice. Não sem alguma desconfiança, claro: as pessoas que escreveram os artigos poderiam não ser pessoas! No entanto, você  contém os seus receios e passa a mover os dedos. Se é filosoficamente que esses mortos-vivos o atormentam, é filosoficamente que encontrará uma forma de extirpá-los da face da terra. 
          </p>
 
-               <a href=artigo_zumbi_filosofico_2.html>Continua...!</a>
+               <a href="/Prometeu/Artigos/artigo_zumbi_filosofico_2.php">Continua...!</a>
 
       </article>
    </body>

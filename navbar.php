@@ -87,6 +87,8 @@
     <a class="selectable" href="/Prometeu/Artigos/artigo_qualia.php">Qualia</a>
     <a class="selectable" href="/Prometeu/Artigos/artigo_epifenomenalismo.php">Epifenomenalismo</a>
     <a class="selectable" href="/Prometeu/Artigos/artigo_dualismo.php">Dualismo</a>
+    <a class="selectable" href="/Prometeu/Artigos/artigo_zumbi_filosofico_1.php">Filosofia zumbi 01</a>
+    <a class="selectable" href="/Prometeu/Artigos/artigo_zumbi_filosofico_2.php">Filosofia zumbi 02</a>
     </div>
     <div class="extras">
     <a class="selectable icon" href="/Prometeu/referencias.php">
