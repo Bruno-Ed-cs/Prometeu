@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 28, 2023 at 03:43 PM
+-- Generation Time: Jul 01, 2023 at 01:24 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -49,19 +49,6 @@ INSERT INTO `Artigos` (`idArtigos`, `Titulo`, `Abreviacao`, `Localizacao`, `Desc
 (4, 'O Apocalipse Zumbi (Filosófico!) – Parte 2', 'Filosofia Zumbi 02', '/Prometeu/Artigos/artigo_zumbi_filosofico_2.php', 'Tantas páginas passaram por seus olhos que já não seria capaz de contá-las. Seria como tentar contar os carros cruzando uma rodovia movimentada em horário comercial. Nesse processo vertiginoso, porém, você acaba por fazer uma descoberta: aquilo que julgava não passar de divagações de uma mente perturbada são, na verdade, fragmentos de debates filosóficos seriamente levantados. Parte do que os filósofos chamam de “o problema das outras mentes”. Esse problema pode ser elucidado a partir de dois conceitos. ', '/Prometeu/I1/I_Am_a_Hero.jpg', '2023-04-08', 'Introdução'),
 (5, 'Eu teria conseguido se não fossem esses filósofos enxeridos e esse Gilbert Ryle idiota!', 'Dualismo', '/Prometeu/Artigos/artigo_dualismo.php', 'Durante séculos um fantasma assombrou os corredores do pensamento filosófico. Por meio de equívocos linguísticos e lógicos, ele foi saltando de mente em mente, nos prendendo a crenças antigas e ultrapassadas sobre a natureza da consciência. Gilbert Ryle e outros filósofos enxeridos, no entanto, comprometem-se em desmascará-lo, mostrando que todos esses fenômenos aparentemente sobrenaturais que formam nossa vida interior não precisam ser fantoches controlados por uma cópia nossa de outro mundo, ou alma: as vezes é só um cara material mascarado de mental. ', '/Prometeu/I1/Artigo_Z.jpeg', '2022-11-16', 'Problema mente-corpo');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `Cards`
---
-
-CREATE TABLE `Cards` (
-  `idCards` int(10) UNSIGNED NOT NULL,
-  `NomeFilosofo` varchar(255) NOT NULL,
-  `Cardpath` varchar(225) DEFAULT NULL,
-  `Categoria` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
 --
 -- Indexes for dumped tables
 --
@@ -74,13 +61,6 @@ ALTER TABLE `Artigos`
   ADD UNIQUE KEY `idArtigos` (`idArtigos`);
 
 --
--- Indexes for table `Cards`
---
-ALTER TABLE `Cards`
-  ADD PRIMARY KEY (`idCards`),
-  ADD UNIQUE KEY `idCards` (`idCards`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -89,12 +69,6 @@ ALTER TABLE `Cards`
 --
 ALTER TABLE `Artigos`
   MODIFY `idArtigos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `Cards`
---
-ALTER TABLE `Cards`
-  MODIFY `idCards` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

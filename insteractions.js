@@ -34,8 +34,8 @@ var themes = {
   
               dark_theme:
               [['--Primary_color', '#730099'],
-              ['--Secundary_color', '#7ab10e'],
-              ['--Hover_color', '#a6db3bab'],
+              ['--Secundary_color', '#00b386'],
+              ['--Hover_color', '#00b386'],
               ['--Background_color', '#413f3f'],
               ['--Primary_font_color', '#FFFFFF'],
               ['--Secundary_font_color', '#ffffff'],
@@ -52,8 +52,8 @@ var themes = {
 
               high_contrast:
               [['--Primary_color', '#000000'],
-              ['--Secundary_color', '#f2ff00'],
-              ['--Hover_color', '#fbff00dc'],
+              ['--Secundary_color', '#ff0000'],
+              ['--Hover_color', '#cc0000'],
               ['--Background_color', '#000000'],
               ['--Primary_font_color', '#FFFFFF'],
               ['--Secundary_font_color', '#FFFFFF'],
