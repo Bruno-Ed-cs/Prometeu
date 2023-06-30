@@ -285,6 +285,20 @@ aside{
     
 }
 
+.organizer{
+    margin: 0.5rem;
+    color: var(--Primary_font_color);
+}
+
+.date{
+    position: relative;
+    bottom: 0.3rem;
+    margin: 0.5rem;
+    float: left;
+    font-size: 0.9rem;
+    z-index: -1;
+}
+
 .artigos a{
     padding: 1rem;
     margin: 0.5rem 0 0.5rem 0;

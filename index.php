@@ -13,7 +13,9 @@
    <body>
       <!--Menu do topo-->
       
-      <?php include('navbar.php'); ?>
+      <?php 
+      require('navbar.php');
+      ?>
 
       <main id="wellcome">
          <div class="intro">
