@@ -39,7 +39,7 @@ var themes = {
               ['--Background_color', '#413f3f'],
               ['--Primary_font_color', '#FFFFFF'],
               ['--Secundary_font_color', '#ffffff'],
-              ['--Shadow_color', 'rgba(0, 0, 0, 0.2)']],
+              ['--Shadow_color', 'rgba(0, 0, 0, 0.2)'],],
               
               light_theme:
               [['--Primary_color', '#EE8B31'],

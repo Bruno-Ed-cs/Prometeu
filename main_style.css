@@ -12,6 +12,7 @@
     --Box_shadow: 0px 5px 5px var(--Shadow_color);
     --Box_shadow_alt: 0 -10px 10px -10px var(--Shadow_color);
     --Box_shadow_full: 2px 2px 2px 2px var(--Shadow_color);
+    --selected_color: #ffffff;
 
     background-color: var(--Background_color);
     box-sizing: border-box;
@@ -73,6 +74,10 @@ i{
     background-color: var(--Secundary_color);
     border-radius: 1rem;
 }
+
+
+
+
 
 
 /** Elementos de navegação**/
@@ -406,6 +411,7 @@ aside{
 
 .selected_field{
     background-color: var(--Secundary_color);
+    color: var(--selected_color);
 }
 
 .themes{
