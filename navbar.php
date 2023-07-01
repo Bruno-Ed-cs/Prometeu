@@ -37,7 +37,7 @@
       </a>
       <div class="search_bar menu" id="bar">
          <input type="text">
-         <button><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+         <button type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
       </div>
    </li>
    <img id="logo" src="/Prometeu/imagens/logopainel.png" alt="logo">
