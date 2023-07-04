@@ -1,19 +1,19 @@
-var ui_menus = document.getElementsByClassName('menu');
-var root_style = document.querySelector(':root');
-var root_properties = getComputedStyle(root_style);
-var cur_theme = 'light_theme';
-var theme_buttons = document.getElementsByClassName("field");
-var sel_theme_button = localStorage.getItem('sel_theme_button');
+let ui_menus = document.getElementsByClassName('menu');
+let root_style = document.querySelector(':root');
+let root_properties = getComputedStyle(root_style);
+let cur_theme = 'light_theme';
+let theme_buttons = document.getElementsByClassName("field");
+let sel_theme_button = localStorage.getItem('sel_theme_button');
 
-var url = window.location.pathname;
-var selectables = document.getElementsByClassName('selectable');
+let url = window.location.pathname;
+let selectables = document.getElementsByClassName('selectable');
 
 console.log(url);
 console.log(selectables);
 
-for (var i = 0; i < selectables.length; i++) {
+for (let i = 0; i < selectables.length; i++) {
   console.log(selectables[i]);
-  var href = selectables[i].getAttribute('href');
+  let href = selectables[i].getAttribute('href');
   console.log(href);
 
   
@@ -30,7 +30,7 @@ for (var i = 0; i < selectables.length; i++) {
 
 
 
-var themes = {
+let themes = {
   
               dark_theme:
               [['--Primary_color', '#730099'],
@@ -154,7 +154,7 @@ function call(target_id){
         console.log('b')
     };
     
-    for (var n = 0; n < ui_menus.length; n++){
+    for (let n = 0; n < ui_menus.length; n++){
         if (ui_menus[n].id !== target_id){
             console.log(ui_menus[n].id);
             ui_menus[n].style.display = 'none';

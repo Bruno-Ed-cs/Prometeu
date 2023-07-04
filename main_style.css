@@ -87,6 +87,7 @@ nav{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 2;
 
     background-color: var(--Primary_color);
     position: fixed;
@@ -241,6 +242,16 @@ article .card{
 
 /** Menu lateral **/
 
+@keyframes slide-up {
+    from {bottom: -100%; opacity: 0;}
+    to {bottom: 3rem; opacity: 1;}
+}
+
+@keyframes slide-down {
+    from {top: -100%; opacity: 0;}
+    to {top: 3rem; opacity: 1;}
+}
+
 aside{
 
     display: none;
@@ -256,6 +267,8 @@ aside{
     border-radius: 1rem;
     box-shadow: var(--Box_shadow);
     width: calc(100% - 0.6rem);
+    animation-name: slide-up;
+    animation-duration: 0.4s;
 
 }
 
@@ -328,6 +341,12 @@ aside{
 
 /** Barra de pesquisa **/
 
+@keyframes slide-down_search {
+    from {top: -100%; opacity: 0;}
+    to {top: 0; opacity: 1;}
+}
+
+
 .search_bar{
     display: none;
     align-items: center;
@@ -341,6 +360,8 @@ aside{
     margin: 0.5rem auto 0.5rem auto;
     border-radius: 3rem;
     box-shadow: var(--Box_shadow);
+    animation-name: slide-down_search;
+    animation-duration: 0.4s;
 }
 
 .search_bar input{
@@ -431,6 +452,8 @@ aside{
     justify-content: center;
     overflow-y: auto;
     width: fit-content;
+    animation-name: slide-up;
+    animation-duration: 0.4s;
 }
 
 .field{
@@ -714,9 +737,7 @@ aside{
         padding: 0.5rem 0.1rem 0.5rem 0.1rem;
     }
 
-    .config{
-        align-items: start;
-    }
+
 
     .field{
         display: inline-block;
@@ -770,6 +791,10 @@ aside{
         width: 70%;
     }
 
+    .config{
+        align-items: start;
+    }
+
 }
 
 /** Monitores HD **/
@@ -812,6 +837,9 @@ aside{
         top: 3rem;
         height: 90%;
         width: 30rem;
+        animation-name: slide-down;
+        animation-duration: 0.4s;
+        
     }
 
     .search_bar{
@@ -819,10 +847,15 @@ aside{
         top: 3rem;
         width: 45%;
         margin: 0.2rem;
+        animation-name: slide-down;
+        animation-duration: 0.4s;
+        
     }
 
     .config{
         top: 3rem;
+        animation-name: slide-down;
+        animation-duration: 0.4s;
 
     }
 
