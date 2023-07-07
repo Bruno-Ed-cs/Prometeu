@@ -76,8 +76,8 @@ i{
 }
 
 .selected_field{
-    background-color: var(--Secundary_color);
-    color: var(--Primary_font_color);
+    background-color: var(--Secundary_color) !important;
+
 }
 
 
