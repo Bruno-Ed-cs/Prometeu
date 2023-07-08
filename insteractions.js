@@ -143,28 +143,63 @@ function change_theme(sel_theme='light_theme', element){
 
 };
 
-function call(target_id){
+function call(target_id) {
+  const element = document.getElementById(target_id);
+  const menus = ui_menus
 
-    if (document.getElementById(target_id).style.display == "flex"){
-        document.getElementById(target_id).style.display = "none";
-        console.log('c')
-        
+  if (document.getElementById(target_id).style.display == "flex") {
+    if (target_id == "bar"){
+      element.classList.add('closing_search');
     } else{
-        document.getElementById(target_id).style.display = "flex";
-        console.log('b')
+      element.classList.add('closing');
+    };
+    element.addEventListener('animationend', function disapear() {
+      element.style.display = "none";
+      if (target_id == "bar"){
+        element.classList.remove('closing_search');
+      } else{
+        element.classList.remove('closing');
+      };
+      element.removeEventListener('animationend', disapear); // Move removeEventListener here
+    });
+    console.log('c');
+  } else {
+    element.style.display = "flex";
+    if (target_id == "bar"){
+      element.classList.add('openning_search');
+    } else{
+      element.classList.add('openning');
     };
     
-    for (var n = 0; n < ui_menus.length; n++){
-        if (ui_menus[n].id !== target_id){
-            console.log(ui_menus[n].id);
-            ui_menus[n].style.display = 'none';
-        };
-        console.log(ui_menus[n])
-    };
-};
+    element.addEventListener('animationend', function removeOpenning() {
+      if (target_id == "bar"){
+        element.classList.remove('openning_search');
+      } else{
+        element.classList.remove('openning');
+      };
+      element.removeEventListener('animationend', removeOpenning); // Move removeEventListener here
+    });
+    console.log('b');
+  }
+
+  for (let n = 0; n < menus.length; n++) {
+    if (menus[n].id !== target_id) {
+      console.log(menus[n].id);
+      menus[n].style.display = "none"
+    }
+    console.log(menus[n]);
+  }
+}
+
 
 function close_element(parent_id){
-    document.getElementById(parent_id).style.display = "none"
+    const element = document.getElementById(parent_id)
+    element.classList.add('closing');
+    element.addEventListener('animationend', function disapear() {
+      element.style.display = "none";
+      element.classList.remove('closing');
+      element.removeEventListener('animationend', disapear); // Move removeEventListener here
+    });
     console.log(parent_id)
 };
 
