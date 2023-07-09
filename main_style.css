@@ -56,26 +56,26 @@
 
 .openning{
     animation-name: slide_up;
-    animation-duration: 600ms;
+    animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
 
 .closing{
     animation-name: slide_up;
-    animation-duration: 600ms;
+    animation-duration: 500ms;
     animation-fill-mode: forwards;
     animation-direction: reverse;
 }
 
 .openning_search{
     animation-name: slide_down_search;
-    animation-duration: 600ms;
+    animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
 
 .closing_search{
     animation-name: slide_down_search;
-    animation-duration: 600ms;
+    animation-duration: 500ms;
     animation-fill-mode: forwards;
     animation-direction: reverse;
 }
