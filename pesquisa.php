@@ -17,7 +17,12 @@
             <input type="text"><button type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
         </div>
 
-        <a href="dasdasdasdasdasdasdasd" class="showcase">
+        <div class="container">
+            <i class="fa-solid fa-ban fa-2xl"></i>
+            <h2>Desculpe, não temos nenhum resultado.</h2>
+        </div>
+
+        <a href="dasdasdasdasdasdasdasd" class="showcase" style="display:none;">
             <div class="show-header">
                 <h4> Teste </h4>
             </div>
@@ -33,8 +38,7 @@
 
         </a>
 
-        
-
     </div>
+
 </body>
 </html>
