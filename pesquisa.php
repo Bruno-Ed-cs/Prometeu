@@ -16,7 +16,7 @@
    
    <div class="container">
     <form class="search_long" id="bar" method="get" action="pesquisa.php?busca=<?php if (isset($_GET['busca'])) echo $_GET['busca']?>">
-        <input type="text" name="busca" placeholder=<?php if (isset($_GET['busca'])) echo $_GET['busca']?>><button type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+        <input type="text" name="busca" value=<?php if (isset($_GET['busca'])) echo $_GET['busca']?>><button type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
     </form>
 
       <?php 
