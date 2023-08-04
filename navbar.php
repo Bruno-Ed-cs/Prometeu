@@ -35,10 +35,10 @@
          <i class="fa-solid fa-magnifying-glass fa-sm"></i>
          <p>Busca</p>
       </a>
-      <div class="search_bar menu" id="bar">
-         <input type="text">
+      <form class="search_bar menu" id="bar" method="get" action="/Prometeu/pesquisa.php?busca=<?php if (isset($_GET['busca'])) echo $_GET['busca']?>">
+         <input type="text" name="busca" placeholder="Pesquisar artigos...">
          <button type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
-      </div>
+      </form>
    </li>
    <img id="logo" src="/Prometeu/imagens/logopainel.png" alt="logo">
 </nav>
@@ -115,3 +115,4 @@
       </a>
    </div>
 </aside>
+

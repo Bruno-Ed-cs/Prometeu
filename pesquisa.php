@@ -11,34 +11,71 @@
       <link rel="icon" href="imagens/iconepag-red.png">
 </head>
 <body>
-    <?php require "navbar.php"; ?>
-    <div class="container">
-        <div class="search_long">
-            <input type="text"><button type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
-        </div>
+    <!--Menu do topo-->
+   <?php include('navbar.php'); ?>
+   
+   <div class="container">
+    <form class="search_long" id="bar" method="get" action="pesquisa.php?busca=<?php if (isset($_GET['busca'])) echo $_GET['busca']?>">
+        <input type="text" name="busca" placeholder=<?php if (isset($_GET['busca'])) echo $_GET['busca']?>><button type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+    </form>
 
-        <div class="container">
-            <i class="fa-solid fa-ban fa-2xl"></i>
-            <h2>Desculpe, não temos nenhum resultado.</h2>
-        </div>
+      <?php 
 
-        <a href="dasdasdasdasdasdasdasd" class="showcase" style="display:none;">
-            <div class="show-header">
-                <h4> Teste </h4>
-            </div>
-            <div class="show-body">
-                <div class="display"><img src="/Prometeu/imagens/lupa.png" ></div>
-                <p>
-                algum texto bom pelo amor de deus 
-                </p>
-            </div>
-            <p class="date">
-                22-33-4444
-            </p>
+      if (isset($_GET["busca"])) {
+        
+        $query = $mysqli->query("SELECT * FROM Artigos WHERE Titulo LIKE '%" . $_GET["busca"] . "%'");
 
-        </a>
+        $categorias = array();
 
-    </div>
+        //var_dump($categorias);
+        $query->data_seek(0);
 
+        while ($row = $query->fetch_assoc()) {
+            if (!in_array($row['Assunto'], $categorias)) {
+                $categorias[] = $row['Assunto'];
+            }
+        }
+
+        if (!empty($categorias))
+        {
+            ?>
+            <h2 style='margin-top: 2vh'>Resultados</h2>
+            <?php
+            foreach ($categorias as $categoria) {
+            
+                $query->data_seek(0); // Reinicia o ponteiro do resultado para o início
+
+                while ($row = $query->fetch_assoc()) {
+                    if ($row['Assunto'] == $categoria) {
+                ?>
+                    <a href="<?php echo $row['Localizacao']; ?>" class="showcase">
+                        <div class="show-header">
+                            <h4><?php echo $row['Titulo']; ?> </h4>
+                        </div>
+                        <div class="show-body">
+                            <div class="display"><img src="<?php echo $row['Thumbnail']; ?>" ></div>
+                            <p>
+                                <?php echo $row['Descricao']; ?> 
+                            </p>
+                        </div>
+                        <p class="date">
+                            <?php echo $row['Publicacao']; ?> 
+                        </p>
+                    </a>
+                    
+                <?php  
+                    }
+                }
+                ?>
+            <?php
+            }
+        } else {
+            echo("<h2 style='margin-top: 2vh'>Nenhum resultado encontrado.</h2>");
+        }
+      } else {
+        echo("<h2 style='margin-top: 2vh'>Nenhum resultado encontrado.</h2>");
+      }
+      ?>
+   </div>
 </body>
 </html>
