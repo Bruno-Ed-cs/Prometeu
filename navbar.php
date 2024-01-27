@@ -1,7 +1,7 @@
-<?php require $_SERVER["DOCUMENT_ROOT"] . "/Prometeu/connect.php"; ?>
+<?php require("connect.php"); ?>
 <nav>
    <li>
-      <a onclick="call('side_menu')" class="button_menu icon">
+      <a tabindex="0" onclick="call('side_menu')" class="button_menu icon">
          <i class="fa-solid fa-bars fa-xl"></i>
          <p>Menu</p>
       </a>
@@ -25,13 +25,13 @@
       </a>
    </li>
    <li>
-      <a class="selectable icon" onclick="call('config_menu')">
+      <a tabindex="0" class="selectable icon" onclick="call('config_menu')">
          <i class="fa-solid fa-palette fa-sm"></i>
          <p>Temas</p>
       </a>
    </li>
    <li>
-      <a onclick="call('bar')" class="icon">
+      <a tabindex="0" onclick="call('bar')" class="icon">
          <i class="fa-solid fa-magnifying-glass fa-sm"></i>
          <p>Busca</p>
       </a>
