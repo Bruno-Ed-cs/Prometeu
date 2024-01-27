@@ -37,29 +37,30 @@
       </a>
       <form class="search_bar menu" id="bar" method="get" action="/Prometeu/pesquisa.php?busca=<?php if (isset($_GET['busca'])) echo $_GET['busca']?>">
          <input type="text" name="busca" placeholder="Pesquisar artigos...">
-         <button type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+         <button aria-label="Search button" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
       </form>
    </li>
    <img id="logo" src="/Prometeu/imagens/logopainel.png" alt="logo">
 </nav>
+
 <!-- Menu de Configurações -->
-<div class="config menu" id="config_menu">
-   <a class="selectable close_menu icon" onclick="close_element('config_menu')"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+<div aria-label="Theme configuration" class="config menu" id="config_menu">
+   <a aria-label="Close" tabindex="0" class="selectable close_menu icon" onclick="close_element('config_menu')"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
    <h4>Aparência</h4>
    <div class="themes">
-      <div class="field " id="dark" onclick="change_theme('dark_theme', this)">
+      <div tabindex="0" class="field " id="dark" onclick="change_theme('dark_theme', this)">
          <a class="selectable icon">
             <i class="fa-sharp fa-solid fa-cloud-moon"></i>
             <p>Tema Escuro</p>
          </a>
       </div>
-      <div class="field " id='light' onclick="change_theme('light_theme', this)">
+      <div tabindex="0" class="field " id='light' onclick="change_theme('light_theme', this)">
          <a class="selectable icon">
             <i class="fa-solid fa-sun"></i>
             <p>Tema claro</p>
          </a>
       </div>
-      <div class="field " id='contrast' onclick="change_theme('high_contrast', this)">
+      <div tabindex="0" class="field " id='contrast' onclick="change_theme('high_contrast', this)">
          <a class="selectable icon">
             <i class="fa-solid fa-eye"></i>
             <p>Alto-contraste</p>
@@ -71,7 +72,7 @@
 <aside id="side_menu" class="menu">
    <div class="top">
       <h4>Artigos</h4>
-      <a class="selectable icon close_menu" onclick="close_element('side_menu')"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
+      <a aria-label="Close" tabindex="0" class="selectable icon close_menu" onclick="close_element('side_menu')"><i class="fa-sharp fa-solid fa-circle-xmark fa-lg"></i></a>
    </div>
    <div class="artigos">
       <?php 

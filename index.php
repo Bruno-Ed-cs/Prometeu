@@ -7,7 +7,7 @@
       <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
       <script src="/Prometeu/insteractions.js" async></script>
       <title>Prometeu</title>
-      <link rel="stylesheet" href="main_style.css">
+      <link rel="stylesheet" href="/Prometeu/main_style.css">
       <link rel="icon" href="imagens/iconepag-red.png">
    </head>
    <body>

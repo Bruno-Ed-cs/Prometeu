@@ -28,7 +28,7 @@
             Agora que já trocamos essa experiência, estamos prontos para entrar em um breve experimento mental.
             Imagine que após a Kate Bush chegar ao topo da colina, Deus de fato se compadecesse da sua angústia e a trocasse de lugar com seu amante, para que ele possa saber como ela se sente, e vice-versa.
          </p>
-         <video controls class="media">
+         <video tabindex="0" controls class="media">
             <source src="/Prometeu/Video/Kate_Bush.mp4" type="video/mp4">
             <source src="/Prometeu/Video/Kate_Bush.ogg" type="video/ogg">
          </video>
