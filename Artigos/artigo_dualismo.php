@@ -5,20 +5,20 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
       <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
-      <script src="/Prometeu/insteractions.js" async></script>
+      <script src="insteractions.js" async></script>
       <title>Prometeu</title>
-      <link rel="stylesheet" href="/Prometeu/main_style.css">
-      <link rel="icon" href="/Prometeu/imagens/iconepag-red.png">
+      <link rel="stylesheet" href="main_style.css">
+      <link rel="icon" href="imagens/iconepag-red.png">
    </head>
    <body>
       <!--Menu do topo-->
       <?php 
-      include $_SERVER["DOCUMENT_ROOT"] . "/Prometeu/navbar.php"; 
+      include $_SERVER["DOCUMENT_ROOT"] . "navbar.php"; 
       ?>
       <!--Div dos artigos-->
       <article>
          <h2>Eu teria conseguido se não fossem esses filósofos enxeridos e esse Gilbert Ryle idiota! </h2>
-         <img class="media" src="/Prometeu/I1/Artigo_Z.jpeg" alt="foto de Artigo Z">
+         <img class="media" src="I1/Artigo_Z.jpeg" alt="foto de Artigo Z">
          <p>
             Você já chegou a se perguntar se tudo que você viveu até agora poderia não passar de uma ilusão? Se poderia ser tudo um mero sonho, ou, pior, uma simulação na Matrix feita por máquinas que dominaram a terra? Se você é uma pessoa normal, talvez não, mas essa é uma pergunta cotidiana para um filósofo. O René Descartes, um filósofo francês do século 17, por exemplo, dedicou boa parte do seu tempo livre para encontrar uma resposta para essa questão.    
          </p>
@@ -29,8 +29,8 @@
             Vamos entrar na viagem do Descartes por um momento. Ok, tudo, desde seu corpo até esse parágrafo particular que você está lendo agora, não passa de uma alucinação. O que sobra de real então? Ora, o próprio fato de que você pensa que tudo isso é mentira!
          </p>
          <div class="card" style="width: 250px;">
-            <img class="card-image" src="/Prometeu/I1/René_Descartes.jpeg" alt="foto de René Descartes">
-            <div class="card-footer"><a href=/Prometeu/timeline.php>René Descartes</a></div>
+            <img class="card-image" src="I1/René_Descartes.jpeg" alt="foto de René Descartes">
+            <div class="card-footer"><a href=timeline.php>René Descartes</a></div>
          </div>
          <p>
             Mesmo que seus sentidos te enganem,  todos os seus raciocínios estejam errados e tudo seja como um sonho, o que você pensa necessariamente precisa ser alguma coisa para que ele possa ser iludido em primeiro lugar. Enquanto continuar pensando, portanto, é possível ter certeza que você é real de alguma forma. É daí que vem sua famosa conclusão, que você muito provavelmente já ouviu falar em algum lugar: “penso, logo existo”. 
@@ -49,8 +49,8 @@
             Mas as falhas no dualismo não param por aí. O filósofo britânico Gilbert Ryle, na verdade, dedicou uma parte inteira do seu livro “The Concept of Mind” (O Conceito de Mente), publicado em 1949, para expor as incongruências lógicas que ele identificou nessa teoria. Ele até criou seus próprios apelidos carinhosos para ela: o dogma do fantasma na máquina, ou doutrina oficial.
          </p>
          <div class="card" style="width: 250px;">
-            <img class="card-image" src="/Prometeu/I1/Gilbert_Ryle.jpeg" alt="foto de Gilbert Ryle">
-            <div class="card-footer"><a href=/Prometeu/timeline.php>Gilbert Ryle</a></div>
+            <img class="card-image" src="I1/Gilbert_Ryle.jpeg" alt="foto de Gilbert Ryle">
+            <div class="card-footer"><a href=timeline.php>Gilbert Ryle</a></div>
          </div>
          <p>
             O Ryle demonstra em seu livro que nosso apego às ideias da “doutrina oficial” dá origem não apenas ao problema mente-corpo, mas também ao “problema das outras mentes“ (sim, a filosofia tem mais problemas que soluções!). Ele consiste no fato de que, se segundo a visão dualista a mente é completamente privada e não pode ser testemunhada por observadores externos (só você pode “ver” os seus pensamentos), não existe nenhuma razão boa o suficiente para acreditar que qualquer mente existe além da sua própria.
@@ -76,7 +76,7 @@
          </p>
          <p>
             O dualismo, por sua vez, apesar de ter tido vários de suas implicações problemáticas desmascaradas pelo Gilbert Ryle e não contar com tanta popularidade hoje em dia quanto já possuiu, continua tendo vários adeptos de suas versões mais modernas, como o 
-            <a href="/Prometeu/Artigos/artigo_epifenomenalismo.php">epifenomenalismo</a> e o dualismo de propriedade.
+            <a href="Artigos/artigo_epifenomenalismo.php">epifenomenalismo</a> e o dualismo de propriedade.
          </p>
       </article>
    </body>

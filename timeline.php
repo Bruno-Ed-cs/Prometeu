@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
       <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
-      <script src="/Prometeu/insteractions.js" async></script>
+      <script src="insteractions.js" async></script>
       <title>Prometeu</title>
       <link rel="stylesheet" href="main_style.css">
       <link rel="icon" href="imagens/iconepag-red.png">
@@ -19,7 +19,7 @@
         <div class="card_container">
         <div class="card">
             <!-- Foto do filósofo -->
-            <img class="card-image" src="/Prometeu/I1/Aristóteles.jpeg" alt="foto de Aristóteles">
+            <img class="card-image" src="I1/Aristóteles.jpeg" alt="foto de Aristóteles">
             <div class="card-body">
                <h3 class="card-title">Aristóteles</h3>
                <p class="card-text">
@@ -31,7 +31,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/René_Descartes.jpeg" alt="foto de René Descartes">
+            <img class="card-image" src="I1/René_Descartes.jpeg" alt="foto de René Descartes">
             <div class="card-body">
                <h3 class="card-title">René Descartes</h3>
                <p class="card-text">
@@ -43,7 +43,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Baruch_Spinoza.jpeg" alt="foto de Baruch Spinoza">
+            <img class="card-image" src="I1/Baruch_Spinoza.jpeg" alt="foto de Baruch Spinoza">
             <div class="card-body">
                <h3 class="card-title">Baruch Spinoza</h3>
                <p class="card-text">
@@ -55,7 +55,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/John_Locke.jpeg" alt="foto de John Locke">
+            <img class="card-image" src="I1/John_Locke.jpeg" alt="foto de John Locke">
             <div class="card-body">
                <h3 class="card-title">John Locke</h3>
                <p class="card-text">
@@ -67,7 +67,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Gottfried_Leibniz.jpeg" alt="foto de René Descartes">
+            <img class="card-image" src="I1/Gottfried_Leibniz.jpeg" alt="foto de René Descartes">
             <div class="card-body">
                <h3 class="card-title">Gottfried Leibniz</h3>
                <p class="card-text">
@@ -79,7 +79,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/David_Hume.jpeg" alt="foto de David Hume">
+            <img class="card-image" src="I1/David_Hume.jpeg" alt="foto de David Hume">
             <div class="card-body">
                <h3 class="card-title">David Hume</h3>
                <p class="card-text">
@@ -91,7 +91,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Ludwig_Wittgenstein.jpeg" alt="foto de Ludwig Wittgenstein">
+            <img class="card-image" src="I1/Ludwig_Wittgenstein.jpeg" alt="foto de Ludwig Wittgenstein">
             <div class="card-body">
                <h3 class="card-title">Ludwig Wittgenstein</h3>
                <p class="card-text">
@@ -103,7 +103,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Gilbert_Ryle.jpeg" alt="foto de Gilbert Ryle">
+            <img class="card-image" src="I1/Gilbert_Ryle.jpeg" alt="foto de Gilbert Ryle">
             <div class="card-body">
                <h3 class="card-title">Gilbert Ryle</h3>
                <p class="card-text">
@@ -115,7 +115,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Maurice_Merleau-Ponty.jpeg" alt="foto de Maurice Merleau-Ponty">
+            <img class="card-image" src="I1/Maurice_Merleau-Ponty.jpeg" alt="foto de Maurice Merleau-Ponty">
             <div class="card-body">
                <h3 class="card-title">Maurice Merleau-Ponty</h3>
                <p class="card-text">
@@ -127,7 +127,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Alan_Turing.jpeg" alt="foto de Alan Turing">
+            <img class="card-image" src="I1/Alan_Turing.jpeg" alt="foto de Alan Turing">
             <div class="card-body">
                <h3 class="card-title">Alan Turing</h3>
                <p class="card-text">
@@ -139,7 +139,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Wilfrid_Sellars.jpeg" alt="foto de Wilfrid Sellars">
+            <img class="card-image" src="I1/Wilfrid_Sellars.jpeg" alt="foto de Wilfrid Sellars">
             <div class="card-body">
                <h3 class="card-title">Wilfrid Sellars</h3>
                <p class="card-text">
@@ -151,7 +151,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Donald_Davidson.jpeg" alt="foto de Donald Davidson">
+            <img class="card-image" src="I1/Donald_Davidson.jpeg" alt="foto de Donald Davidson">
             <div class="card-body">
                <h3 class="card-title">Donald Davidson</h3>
                <p class="card-text">
@@ -163,7 +163,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/GEM_Anscombe.jpeg" alt="foto de G. E. M. Anscombe">
+            <img class="card-image" src="I1/GEM_Anscombe.jpeg" alt="foto de G. E. M. Anscombe">
             <div class="card-body">
                <h3 class="card-title">G. E. M. Anscombe</h3>
                <p class="card-text">
@@ -175,7 +175,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/David_Lewis.jpeg" alt="foto de David Lewis">
+            <img class="card-image" src="I1/David_Lewis.jpeg" alt="foto de David Lewis">
             <div class="card-body">
                <h3 class="card-title">David Lewis</h3>
                <p class="card-text">
@@ -190,7 +190,7 @@
         <div class="card_container">
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Daniel_Dennett.jpeg" alt="foto de Daniel Dennett">
+            <img class="card-image" src="I1/Daniel_Dennett.jpeg" alt="foto de Daniel Dennett">
             <div class="card-body">
                <h3 class="card-title">Daniel Dennett</h3>
                <p class="card-text">
@@ -202,7 +202,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Douglas_Hofstadter.jpeg" alt="foto de Douglas Hofstadter">
+            <img class="card-image" src="I1/Douglas_Hofstadter.jpeg" alt="foto de Douglas Hofstadter">
             <div class="card-body">
                <h3 class="card-title">Douglas Hofstadter</h3>
                <p class="card-text">
@@ -214,7 +214,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/David_Chalmers.jpeg" alt="foto de David Chalmers">
+            <img class="card-image" src="I1/David_Chalmers.jpeg" alt="foto de David Chalmers">
             <div class="card-body">
                <h3 class="card-title">David Chalmers</h3>
                <p class="card-text">
@@ -226,7 +226,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Noam_Chomsky.jpeg" alt="foto de Noam Chomsky">
+            <img class="card-image" src="I1/Noam_Chomsky.jpeg" alt="foto de Noam Chomsky">
             <div class="card-body">
                <h3 class="card-title">Noam Chomsky</h3>
                <p class="card-text">
@@ -238,7 +238,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Patricia_Churchland.jpeg" alt="foto de Patricia Churchland">
+            <img class="card-image" src="I1/Patricia_Churchland.jpeg" alt="foto de Patricia Churchland">
             <div class="card-body">
                <h3 class="card-title">Patricia Churchland</h3>
                <p class="card-text">
@@ -250,7 +250,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Paul_Churchland.jpeg" alt="foto de Paul Churchland">
+            <img class="card-image" src="I1/Paul_Churchland.jpeg" alt="foto de Paul Churchland">
             <div class="card-body">
                <h3 class="card-title">Paul Churchland</h3>
                <p class="card-text">
@@ -262,7 +262,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Jerry_Fodor.jpeg" alt="foto de Jerry Fodor">
+            <img class="card-image" src="I1/Jerry_Fodor.jpeg" alt="foto de Jerry Fodor">
             <div class="card-body">
                <h3 class="card-title">Jerry Fodor</h3>
                <p class="card-text">
@@ -274,7 +274,7 @@
         
 
         <div class="card">
-            <img class="card-image" src="/Prometeu/I1/Hilary_Putnam.jpeg" alt="foto de Hilary Putnam">
+            <img class="card-image" src="I1/Hilary_Putnam.jpeg" alt="foto de Hilary Putnam">
             <div class="card-body">
                <h3 class="card-title">Hilary Putnam</h3>
                <p class="card-text">
@@ -286,7 +286,7 @@
         
 
 		<div class="card">
-            <img class="card-image" src="/Prometeu/I1/John_Searle.jpeg" alt="foto de John Searle">
+            <img class="card-image" src="I1/John_Searle.jpeg" alt="foto de John Searle">
             <div class="card-body">
                <h3 class="card-title">John Searle</h3>
                <p class="card-text">
@@ -298,7 +298,7 @@
 		</div>
         
 		<div class="card">
-            <img class="card-image" src="/Prometeu/I1/João_Texeira.jpeg" alt="foto de João Texeira">
+            <img class="card-image" src="I1/João_Texeira.jpeg" alt="foto de João Texeira">
             <div class="card-body">
                <h3 class="card-title">João Texeira</h3>
                <p class="card-text">
@@ -310,7 +310,7 @@
         
 		
 		<div class="card">
-            <img class="card-image" src="/Prometeu/I1/Celia_Green.jpeg" alt="foto de Celia Green">
+            <img class="card-image" src="I1/Celia_Green.jpeg" alt="foto de Celia Green">
             <div class="card-body">
                <h3 class="card-title">Celia Green</h3>
                <p class="card-text">
@@ -322,7 +322,7 @@
         
 		
 		<div class="card">
-            <img class="card-image" src="/Prometeu/I1/Thomas_Nagel.jpeg" alt="foto de Thomas Nagel">
+            <img class="card-image" src="I1/Thomas_Nagel.jpeg" alt="foto de Thomas Nagel">
             <div class="card-body">
                <h3 class="card-title">Thomas Nagel</h3>
                <p class="card-text">
@@ -337,7 +337,7 @@
 	
 
 	<div class="card">
-            <img class="card-image" src="/Prometeu/I1/Frank_Jackson.jpeg" alt="foto de Frank Jackson">
+            <img class="card-image" src="I1/Frank_Jackson.jpeg" alt="foto de Frank Jackson">
             <div class="card-body">
                <h3 class="card-title">Frank Jackson</h3>
                <p class="card-text">

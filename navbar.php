@@ -7,19 +7,19 @@
       </a>
    </li>
    <li>
-      <a class="selectable icon" href="/Prometeu/index.php">
+      <a class="selectable icon" href="index.php">
          <span><i class="fa-solid fa-house fa-sm"></i></span>
          <p>Início</p>
       </a>
    </li>
    <li>
-      <a class="selectable icon" href="/Prometeu/artigos.php">
+      <a class="selectable icon" href="artigos.php">
          <i class="fa-solid fa-newspaper fa-sm"></i>
          <p>Artigos</p>
       </a>
    </li>
    <li>
-      <a class="selectable icon" href="/Prometeu/timeline.php">
+      <a class="selectable icon" href="timeline.php">
          <i class="fa-solid fa-timeline fa-sm"></i>
          <p>Linha do tempo</p>
       </a>
@@ -35,12 +35,12 @@
          <i class="fa-solid fa-magnifying-glass fa-sm"></i>
          <p>Busca</p>
       </a>
-      <form class="search_bar menu" id="bar" method="get" action="/Prometeu/pesquisa.php?busca=<?php if (isset($_GET['busca'])) echo $_GET['busca']?>">
+      <form class="search_bar menu" id="bar" method="get" action="pesquisa.php?busca=<?php if (isset($_GET['busca'])) echo $_GET['busca']?>">
          <input type="text" name="busca" placeholder="Pesquisar artigos...">
          <button aria-label="Search button" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
       </form>
    </li>
-   <img id="logo" src="/Prometeu/imagens/logopainel.png" alt="logo">
+   <img id="logo" src="imagens/logopainel.png" alt="logo">
 </nav>
 
 <!-- Menu de Configurações -->
@@ -106,11 +106,11 @@
       ?>
    </div>
    <div class="extras">
-      <a class="selectable icon" href="/Prometeu/referencias.php">
+      <a class="selectable icon" href="referencias.php">
          <i class="fa-solid fa-circle-info fa-sm"></i>
          <p>Referências</p>
       </a>
-      <a class="selectable icon" href="/Prometeu/sobre.php">
+      <a class="selectable icon" href="sobre.php">
          <i class="fa-solid fa-address-card fa-sm"></i>
          <p>Sobre</p>
       </a>

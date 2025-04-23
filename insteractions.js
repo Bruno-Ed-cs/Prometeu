@@ -17,7 +17,7 @@ for (let i = 0; i < selectables.length; i++) {
   console.log(href);
 
   
-  if (href === url || url === "/Prometeu/" && href == "/Prometeu/index.php") {
+  if (href === url || url === "" && href == "index.php") {
     if (selectables[i].parentElement.tagName != 'LI'){
       selectables[i].classList.add('selected');
     } else{

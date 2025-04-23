@@ -15,7 +15,7 @@
       <?php include('navbar.php'); ?>
 
     <div class="container">
-        <div class="about"><img src="/Prometeu/imagens/logo_IFRN_br-4129418787.png" alt="ifrn" style="width:80%;">
+        <div class="about"><img src="imagens/logo_IFRN_br-4129418787.png" alt="ifrn" style="width:80%;">
         <h1>Prometeu</h1>
         <h2>
             Projeto realizado pelos seguintes alunos do IFRN:

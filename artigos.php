@@ -5,10 +5,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
    <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
-   <script src="/Prometeu/insteractions.js" async></script>
+   <script src="insteractions.js" async></script>
    <title>Prometeu</title>
-   <link rel="stylesheet" href="/Prometeu/main_style.css">
-   <link rel="icon" href="/Prometeu/imagens/iconepag-red.png">
+   <link rel="stylesheet" href="main_style.css">
+   <link rel="icon" href="imagens/iconepag-red.png">
 </head>
 <body>
    <!--Menu do topo-->
