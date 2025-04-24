@@ -5,10 +5,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
    <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
-   <script src="insteractions.js" async></script>
+   <script src="/insteractions.js" async></script>
    <title>Prometeu</title>
-   <link rel="stylesheet" href="main_style.css">
-   <link rel="icon" href="imagens/iconepag-red.png">
+   <link rel="stylesheet" href="/main_style.css">
+   <link rel="icon" href="/imagens/iconepag-red.png">
 </head>
 <body>
    <!--Menu do topo-->
@@ -44,7 +44,7 @@
                      <h4><?php echo $row['Titulo']; ?> </h4>
                   </div>
                   <div class="show-body">
-                     <div class="display"><img src="<?php echo $row['Thumbnail']; ?>" ></div>
+                     <div class="display"><img src="/<?php echo $row['Thumbnail']; ?>" ></div>
                      <p>
                         <?php echo $row['Descricao']; ?> 
                      </p>

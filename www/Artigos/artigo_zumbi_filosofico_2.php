@@ -5,21 +5,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
       <script src="https://kit.fontawesome.com/a4134bbe98.js" crossorigin="anonymous"></script>
-      <script src="insteractions.js" async></script>
+      <script src="/insteractions.js" async></script>
       <title>Prometeu</title>
-      <link rel="stylesheet" href="main_style.css">
-      <link rel="icon" href="imagens/iconepag-red.png">
+      <link rel="stylesheet" href="/main_style.css">
+      <link rel="icon" href="/imagens/iconepag-red.png">
    </head>
    <body>
       <!--Menu do topo-->
       <?php 
-      include $_SERVER["DOCUMENT_ROOT"] . "navbar.php"; 
+      include $_SERVER["DOCUMENT_ROOT"] . "/navbar.php"; 
       ?>
       
       <!--Div dos artigos-->
       <article>
          <h2>O Apocalipse Zumbi (filosófico!) – parte 2</h2>
-         <img class="media" src="I1/I_Am_a_Hero.jpg" alt="Imagem de I Am a Hero">
+         <img class="media" src="/I1/I_Am_a_Hero.jpg" alt="Imagem de I Am a Hero">
          <p>
             Tantas páginas passaram por seus olhos que já não seria capaz de contá-las. Seria como tentar contar os carros cruzando uma rodovia movimentada em horário comercial. Nesse processo vertiginoso, porém, você acaba por fazer uma descoberta: aquilo que julgava não passar de divagações de uma mente perturbada são, na verdade, fragmentos de debates filosóficos seriamente levantados. Parte do que os filósofos chamam de “o problema das outras mentes”. Esse problema pode ser elucidado a partir de dois conceitos. 
          </p>
