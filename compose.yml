@@ -1,3 +1,5 @@
+name: prometeu
+
 services:
   web:
     image: nginx:latest
@@ -7,7 +9,7 @@ services:
     volumes:
       - type: bind
         source: ./nginx/nginx.conf
-        target: /etc/nginx/conf.d/default.conf        
+        target: /etc/nginx/nginx.conf
         read_only: true
 
       - ./www:/var/www/html
@@ -23,21 +25,15 @@ services:
 
     environment:
       MYSQL_ROOT_PASSWORD: 12345
-
       MYSQL_USER: user
       MYSQL_PASSWORD: 12345
-
-
+      MYSQL_DATABASE: Prometeudb
 
   backend:
     build:
       context: ./php/
     volumes:
       - ./www:/var/www/html
-  #
-  #  networks:
-  #    default: 
-  #      name: prometeu_nt
-  #
+
 volumes:
   db_data:
